@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.31453457, g: 0.55162674, b: 0.82192343, a: 1}
+  m_IndirectSpecularColor: {r: 0.3130029, g: 0.5501603, b: 0.8220557, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -363,6 +363,10 @@ MonoBehaviour:
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 1.57
   m_TightenRotation: 0.077
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -443,7 +447,9 @@ MonoBehaviour:
   m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
   m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
   m_ThresholdMoveRatioForScale: 0.01
   m_ClampScaling: 1
   m_MinimumScaleRatio: 0.25
@@ -2481,6 +2487,10 @@ MonoBehaviour:
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 1.57
   m_TightenRotation: 0.077
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -3606,6 +3616,10 @@ MonoBehaviour:
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 1.57
   m_TightenRotation: 0.077
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -3686,7 +3700,9 @@ MonoBehaviour:
   m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
   m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
   m_ThresholdMoveRatioForScale: 0.01
   m_ClampScaling: 1
   m_MinimumScaleRatio: 0.25
@@ -5862,6 +5878,10 @@ MonoBehaviour:
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.077
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 0
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -8456,6 +8476,10 @@ MonoBehaviour:
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.077
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 0
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -8525,7 +8549,9 @@ MonoBehaviour:
   m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
   m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
   m_ThresholdMoveRatioForScale: 0.1
   m_ClampScaling: 1
   m_MinimumScaleRatio: 0.25
@@ -8751,7 +8777,7 @@ Transform:
   - {fileID: 1823426889}
   - {fileID: 941582946}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &841128059
 GameObject:
@@ -9292,6 +9318,10 @@ MonoBehaviour:
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -9664,6 +9694,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896662536}
   m_CullTransparentMesh: 1
+--- !u!1001 &901883369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.302892
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.029914714
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.99086
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655320700991044922, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463100748535932800, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
+      propertyPath: m_Name
+      value: Donut02
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6f9a0e75886eda4fa8ee34777d2d192, type: 3}
 --- !u!1 &908128896
 GameObject:
   m_ObjectHideFlags: 0
@@ -10481,6 +10568,10 @@ MonoBehaviour:
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 1.57
   m_TightenRotation: 0.077
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -10550,7 +10641,9 @@ MonoBehaviour:
   m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
   m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
   m_ThresholdMoveRatioForScale: 0.01
   m_ClampScaling: 1
   m_MinimumScaleRatio: 0.25
@@ -11162,6 +11255,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033108549}
   m_CullTransparentMesh: 1
+--- !u!1001 &1057789284
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1508976159}
+    m_Modifications:
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.586904
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9077631
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.0856578
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_Name
+      value: XR Device Simulator
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
 --- !u!1 &1060371908
 GameObject:
   m_ObjectHideFlags: 0
@@ -13067,6 +13217,10 @@ MonoBehaviour:
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 1.57
   m_TightenRotation: 0.077
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -13133,7 +13287,9 @@ MonoBehaviour:
   m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
   m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
   m_ThresholdMoveRatioForScale: 0.01
   m_ClampScaling: 1
   m_MinimumScaleRatio: 0.25
@@ -15241,6 +15397,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505684870}
   m_CullTransparentMesh: 0
+--- !u!4 &1508976159 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7179462289238023466, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+  m_PrefabInstance: {fileID: 1825262782}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1510653519
 GameObject:
   m_ObjectHideFlags: 0
@@ -15668,11 +15829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IsGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 12bd4b8ecc486d84b9e059255860c49b, type: 2}
 --- !u!1 &1555512242
 GameObject:
   m_ObjectHideFlags: 0
@@ -16067,6 +16223,10 @@ MonoBehaviour:
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 1.57
   m_TightenRotation: 0.077
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -16133,7 +16293,9 @@ MonoBehaviour:
   m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
   m_AllowTwoHandedScaling: 0
+  m_OneHandedScaleSpeed: 0.5
   m_ThresholdMoveRatioForScale: 0.01
   m_ClampScaling: 1
   m_MinimumScaleRatio: 0.25
@@ -16975,7 +17137,7 @@ Transform:
   - {fileID: 1598269139}
   - {fileID: 423529121}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1714251360 stripped
 RectTransform:
@@ -17478,7 +17640,7 @@ Transform:
   - {fileID: 1671653061}
   - {fileID: 2102629069}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1815318735
 GameObject:
@@ -17555,7 +17717,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 7.372352e-28}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 2.538456}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -17587,14 +17749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &1823426888 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 99cc2a1856d1d8f40954668ce0ee3a7e, type: 3}
@@ -17746,6 +17900,10 @@ MonoBehaviour:
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -18091,6 +18249,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8189171601776884797, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+      propertyPath: m_ActiveInputMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189171603400248654, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+      propertyPath: m_ActionAssets.Array.data[0]
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
 --- !u!4 &1859349198 stripped
@@ -20100,7 +20266,7 @@ Transform:
   - {fileID: 692397218}
   - {fileID: 807051348}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2064529225
 GameObject:
@@ -21872,7 +22038,7 @@ Transform:
   - {fileID: 1565887664197881479}
   - {fileID: 756086973}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1565887664197881478
 MonoBehaviour:
@@ -22875,7 +23041,9 @@ MonoBehaviour:
   m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
   m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
   m_ThresholdMoveRatioForScale: 0.01
   m_ClampScaling: 1
   m_MinimumScaleRatio: 0.25
