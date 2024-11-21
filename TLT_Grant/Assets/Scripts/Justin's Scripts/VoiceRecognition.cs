@@ -16,20 +16,25 @@ public class VoiceRecognition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartVoiceRecognition();
-    }
+        Recognizer = new DictationRecognizer();
 
-    
-    private void Recognizer_OnDictationComplete(DictationCompletionCause completioncause)
-    {
-        if (completioncause != DictationCompletionCause.Complete)
+        Recognizer.DictationResult += (text, confidence) =>
         {
-            Debug.LogWarningFormat("Dictation Error : {0}", completioncause);
+            Debug.LogFormat("Dictation result: {0}", text);
+            SpeechText.text += text + "\n";
+        };
 
-            /*switch(completioncause)
-            {
+        Recognizer.DictationComplete += (completionCause) =>
+        {
+            if (completionCause != DictationCompletionCause.Complete)
+                Debug.LogErrorFormat("Dictation error: {0}.", completionCause);
+        };
 
-            }*/
-        }
+        Recognizer.DictationError += (error, hresult) =>
+        {
+            Debug.LogErrorFormat("Dictation error: {0}; HResult = {1}.", error, hresult);
+        };
+
+        Recognizer.Start();
     }
 }
