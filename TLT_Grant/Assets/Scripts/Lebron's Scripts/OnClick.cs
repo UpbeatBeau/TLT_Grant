@@ -8,32 +8,36 @@ public class OnClick : MonoBehaviour
     //Vars
 
     Vector3 clickPosition;
-    private Vector3 offset;
+    public Vector3 offset;
 
 
     //Awake  is called on spawn of this script before start
     private void Awake()
     {
-
+        offset = transform.position;
     }
 
     private Vector3 GetMousePos()
     {
         return Camera.main.WorldToScreenPoint(gameObject.transform.position);
+       
+
 
     }
 
     private void OnMouseDown()
 
     {
-       
-        clickPosition = Input.mousePosition - GetMousePos();
+
+        clickPosition = GetMousePos();
 
     }
 
     private void OnMouseDrag()
     {
-        gameObject.transform.position = Camera.main.ScreenToViewportPoint(Input.mousePosition -  clickPosition);
+        Vector3 objpos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, clickPosition.z);
+        gameObject.transform.position = Camera.main.ScreenToWorldPoint(objpos);
+
     }
 
     /*private void OnMouseDown()
