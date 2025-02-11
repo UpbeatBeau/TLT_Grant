@@ -11,7 +11,7 @@ public class VoiceRecognition : MonoBehaviour
     //Variables 
     private Text SpeechText;
 
-    protected DictationRecognizer Recognizer;
+    public DictationRecognizer Recognizer;
 
     // Start is called before the first frame update
     void Start()
