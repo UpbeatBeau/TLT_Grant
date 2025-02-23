@@ -15,7 +15,7 @@ public class QuizManager : MonoBehaviour
     public int num;
     public TextMeshProUGUI qendtxt;
     public GameObject[] buttons;
-    
+    public GameObject nextbutton;
     
     // Start is called before the first frame update
     void Start()
@@ -74,5 +74,6 @@ public class QuizManager : MonoBehaviour
         {
             btn.SetActive(false);
         }
+        nextbutton.SetActive(true);
     }
 }
