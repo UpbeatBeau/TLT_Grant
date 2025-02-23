@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questiontxt: Q13. I regularly use a day planner to plan my activities.
   nextquestion: {fileID: 11400000, guid: 37943c1569ffdad4a9d2814b31f815d2, type: 2}
+  isodd: 1
   lastquestion: 0

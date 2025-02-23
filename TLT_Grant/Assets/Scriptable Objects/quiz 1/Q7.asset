@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questiontxt: Q7. I have difficulty concentrating while doing homework.
   nextquestion: {fileID: 11400000, guid: 2d2e4afa9d9929749a4b0d2cbf164dae, type: 2}
+  isodd: 1
   lastquestion: 0

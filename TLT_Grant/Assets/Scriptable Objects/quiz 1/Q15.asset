@@ -15,4 +15,5 @@ MonoBehaviour:
   questiontxt: Q15. My grades tend to suffer because of last minute cramming for
     tests.
   nextquestion: {fileID: 11400000, guid: e2552e095973e1f48a41d81787801874, type: 2}
+  isodd: 1
   lastquestion: 0

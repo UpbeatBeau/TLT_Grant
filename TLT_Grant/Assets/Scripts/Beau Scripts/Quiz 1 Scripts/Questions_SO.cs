@@ -7,7 +7,9 @@ using UnityEngine;
 [CreateAssetMenu (fileName = "NewQuestion", menuName = "Scriptable Objects", order = 0)]
 public class Questions_SO : ScriptableObject
 {
+    //added a bool to see if its an odd number question or not
     public string questiontxt;
     public Questions_SO nextquestion;
+    public bool isodd;
     public bool lastquestion;
 }

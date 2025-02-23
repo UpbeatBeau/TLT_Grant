@@ -15,4 +15,5 @@ MonoBehaviour:
   questiontxt: Q1. During a study sessions, I set small goals and work to achieve
     them (e.g., read 5 pages of text and do three math problems).
   nextquestion: {fileID: 11400000, guid: 54dbbb5f99963da4a83b141d10d6ba46, type: 2}
+  isodd: 1
   lastquestion: 0
