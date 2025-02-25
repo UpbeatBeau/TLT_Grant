@@ -11,7 +11,7 @@ public class Quiz2Manager : MonoBehaviour
     public Questions_SO current_question;
     public Questions_SO next_question;
     public GameObject[] buttons;
-    public GameObject nextbutton;
+    //public GameObject nextbutton;
     public GameObject input;
    
     
