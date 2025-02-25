@@ -9,7 +9,8 @@ public class OnClick : MonoBehaviour
 
     Vector3 clickPosition;
     public Vector3 offset;
-
+    public bool movable = true;
+     
 
     //Awake  is called on spawn of this script before start
     private void Awake()
@@ -35,8 +36,12 @@ public class OnClick : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        Vector3 objpos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, clickPosition.z);
-        gameObject.transform.position = Camera.main.ScreenToWorldPoint(objpos);
+        if (true)
+        {
+            Vector3 objpos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, clickPosition.z);
+            gameObject.transform.position = Camera.main.ScreenToWorldPoint(objpos);
+
+        }
 
     }
 
