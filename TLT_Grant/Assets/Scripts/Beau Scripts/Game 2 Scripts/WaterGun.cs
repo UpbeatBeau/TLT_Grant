@@ -6,6 +6,12 @@ public class WaterGun : MonoBehaviour
 {
     public GameObject waterProjectilePrefab; // Assign the water projectile prefab in the Inspector
     public float projectileSpeed = 20f; // Adjust the speed of the projectile
+    private Gunfollow gf;
+
+    private void Start()
+    {
+        gf = GetComponent<Gunfollow>();
+    }
 
     void Update()
     {
@@ -18,6 +24,9 @@ public class WaterGun : MonoBehaviour
             // Add force to the projectile to shoot it forward
             Rigidbody rb = waterProjectile.GetComponent<Rigidbody>();
             rb.velocity = transform.forward * projectileSpeed;
+
+            //GunMove
+            gf.GunMove();
         }
     }
 }

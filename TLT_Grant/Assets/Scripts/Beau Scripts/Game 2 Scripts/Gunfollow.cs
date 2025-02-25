@@ -17,7 +17,7 @@ public class Gunfollow : MonoBehaviour
         
     }
 
-    void Update()
+    public void GunMove()
     {
         // Get the mouse movement
         float mouseX = Input.GetAxis("Mouse X") * sensitivity;
