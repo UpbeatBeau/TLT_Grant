@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 52613053}
   - component: {fileID: 52613052}
+  - component: {fileID: 52613054}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -180,6 +181,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &52613054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52613051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02df6b6211833a4428a009a400795ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nxtscene: Beau
 --- !u!1 &107448497
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,7 +256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 107448499}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 52613054}
+        m_TargetAssemblyTypeName: MoveScene, Assembly-CSharp
+        m_MethodName: NextScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Beau
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &107448499
 MonoBehaviour:
   m_ObjectHideFlags: 0

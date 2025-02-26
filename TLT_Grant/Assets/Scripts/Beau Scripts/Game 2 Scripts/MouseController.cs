@@ -26,7 +26,8 @@ public class MouseController: MonoBehaviour
         rotationX -= mouseY;
 
         // Clamp the vertical rotation to avoid flipping the camera
-        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
+        rotationX = Mathf.Clamp(rotationX, -20f, 5f);
+        rotationY = Mathf.Clamp(rotationY, -30f, 30f);
 
         // Apply the rotation to the camera
          transform.localRotation = Quaternion.Euler(rotationX, rotationY, 0f);

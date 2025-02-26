@@ -9,6 +9,7 @@ public class GameScript : MonoBehaviour
     public Canvas endtext;
     public Camera main;
     public GameObject player;
+    public GameObject nxtbutton;
 
     public void YouLose()
     {
@@ -18,6 +19,7 @@ public class GameScript : MonoBehaviour
         player.GetComponent<WaterGun>().enabled = false;
         player.GetComponent<Gunfollow>().enabled = false;
         Camera.main.transform.rotation = Quaternion.Euler(Vector3.zero);
+        nxtbutton.SetActive(true);
     }
 
     public void YouWin()
@@ -29,5 +31,6 @@ public class GameScript : MonoBehaviour
         player.GetComponent<WaterGun>().enabled = false;
         player.GetComponent<Gunfollow>().enabled = false;
         Camera.main.transform.rotation = Quaternion.Euler(Vector3.zero);
+        nxtbutton.SetActive(true);
     }
 }

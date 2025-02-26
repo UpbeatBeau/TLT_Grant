@@ -21,6 +21,8 @@ public class QuizManager : MonoBehaviour
     void Start()
     {
         qtext.text = current_question.questiontxt;
+        nextbutton.SetActive(false);
+       
     }
 
     // Update is called once per frame
@@ -75,5 +77,6 @@ public class QuizManager : MonoBehaviour
             btn.SetActive(false);
         }
         nextbutton.SetActive(true);
+        nextbutton.GetComponent<Image>().enabled = true;
     }
 }
