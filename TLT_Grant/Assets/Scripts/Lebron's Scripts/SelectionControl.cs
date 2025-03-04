@@ -9,12 +9,14 @@ public class SelectionControl : MonoBehaviour
 
     private OnClick clickControl;
     public CanvasController controller;
+    private Collider task;
+    private bool intrig;
 
     // Awake is called on spawn
 
     private void Awake()
     {
-
+        intrig = false;
         clickControl = this.GetComponent<OnClick>();
 
     }
@@ -27,16 +29,11 @@ public class SelectionControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerStay(Collider task)
-
-    {
-
-        if (task.gameObject.CompareTag("Slot 1"))
+        if (Input.GetMouseButtonUp(0) && intrig)
         {
-            if (Input.GetMouseButtonUp(0)){
+            if (task.gameObject.CompareTag("Slot 1"))
+            {
+
                 Debug.Log("go");
 
                 Vector3 slotSpace = task.transform.position;
@@ -47,72 +44,91 @@ public class SelectionControl : MonoBehaviour
 
                 controller.event1 = "1. Got ready for school";
 
+
+
             }
- 
+            else if (task.gameObject.CompareTag("Slot 2"))
+            {
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event2 = "2. Went to the Doctor's Office";
+
+
+            }
+            else if (task.gameObject.CompareTag("Slot 3"))
+            {
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event3 = "3. Took the afternoon class";
+
+
+
+            }
+            else if (task.gameObject.CompareTag("Slot 4"))
+            {
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event4 = "4. Headed home to have lunch";
+
+
+            }
+            else if (task.gameObject.CompareTag("Slot 5"))
+            {
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event5 = "5. Did homework for class";
+
+
+
+            }
+            else if (task.gameObject.CompareTag("Slot 6"))
+            {
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event6 = "6. Went to bed for the night";
+
+
+
+            }
         }
-        else if (task.gameObject.CompareTag("Slot 2"))
-        {
 
-            Vector3 slotSpace = task.transform.position;
+    }
 
-            this.gameObject.transform.position = slotSpace;
+    private void OnTriggerEnter(Collider task1)
 
-            clickControl.movable = false;
+    {
+        task = task1;
+        intrig = true;
+    }
 
-            controller.event2 = "2. Went to the Doctor's Office";
-
-        }
-        else if (task.gameObject.CompareTag("Slot 3"))
-        {
-
-            Vector3 slotSpace = task.transform.position;
-
-            this.gameObject.transform.position = slotSpace;
-
-            clickControl.movable = false;
-
-            controller.event3 = "3. Took the afternoon class";
-
-
-        }
-        else if (task.gameObject.CompareTag("Slot 4"))
-        {
-
-            Vector3 slotSpace = task.transform.position;
-
-            this.gameObject.transform.position = slotSpace;
-
-            clickControl.movable = false;
-
-            controller.event4 = "4. Headed home to have lunch";
-
-        }
-        else if (task.gameObject.CompareTag("Slot 5"))
-        {
-
-            Vector3 slotSpace = task.transform.position;
-
-            this.gameObject.transform.position = slotSpace;
-
-            clickControl.movable = false;
-
-            controller.event5 = "5. Did homework for class";
-
-
-        }
-        else if (task.gameObject.CompareTag("Slot 6"))
-        {
-
-            Vector3 slotSpace = task.transform.position;
-
-            this.gameObject.transform.position = slotSpace;
-
-            clickControl.movable = false;
-
-            controller.event6 = "6. Went to bed for the night";
-
-
-        }
-
+    private void OnTriggerExit(Collider other)
+    {
+        task = null;
+        intrig = false;
     }
 }
