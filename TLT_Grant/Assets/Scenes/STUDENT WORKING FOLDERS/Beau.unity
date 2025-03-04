@@ -4661,6 +4661,7 @@ MonoBehaviour:
   game2: 0
   game3: 0
   game4: 0
+  collected: 2
 --- !u!1 &1688235316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2650a5552d3cfe845904e838fefb321f, type: 3}

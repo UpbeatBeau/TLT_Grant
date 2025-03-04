@@ -11,6 +11,14 @@ public class NPCRacingScript : MonoBehaviour
     public float goal = 30f;//goal to win the game
     public GameScript gm;
     private bool gameover = false;
+    private Vector3 startingpos;
+
+    private void Awake()
+    {
+        int moveback = ExperienceManager.instance.GetComponent<ExperienceManager>().collected;
+        startingpos = this.transform.position - new Vector3(moveback*10,0,0);
+        this.transform.position = startingpos;
+    }
 
     void Start()
     {

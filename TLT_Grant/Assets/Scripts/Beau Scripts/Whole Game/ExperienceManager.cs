@@ -5,10 +5,11 @@ using UnityEngine;
 public class ExperienceManager : MonoBehaviour
 {
     public static GameObject instance;
-    public bool game1;
-    public bool game2;
-    public bool game3;
-    public bool game4;
+    public bool game1 = false;
+    public bool game2 = false;
+    public bool game3 = false;
+    public bool game4 = false;
+    public int collected = 0;
 
     private void Awake()
     {
@@ -21,7 +22,7 @@ public class ExperienceManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        
        
     }
 }
