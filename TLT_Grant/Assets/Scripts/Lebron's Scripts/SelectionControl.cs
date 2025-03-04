@@ -34,6 +34,7 @@ public class SelectionControl : MonoBehaviour
     {
         if (task.gameObject.CompareTag("Slot 1"))
         {
+            Debug.Log("go");
         
             Vector3 slotSpace = task.transform.position;
             
