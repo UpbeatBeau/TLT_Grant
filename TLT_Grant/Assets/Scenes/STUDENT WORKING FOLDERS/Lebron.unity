@@ -453,6 +453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1070191853}
+  obj_txt: Feed the dog
 --- !u!114 &173891674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,7 +512,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -813,7 +814,7 @@ Transform:
   m_GameObject: {fileID: 223469995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.15800427, z: -0.425}
+  m_LocalPosition: {x: -0.056000233, y: 0.15800427, z: -0.425}
   m_LocalScale: {x: 0.23200034, y: 0.23200034, z: 0.23200034}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1208,6 +1209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1070191853}
+  obj_txt: Dinner with friends
 --- !u!114 &530591376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1266,7 +1268,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1454,7 +1456,7 @@ Transform:
   m_GameObject: {fileID: 614691780}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.15800004, z: 0.406}
+  m_LocalPosition: {x: -0.056, y: 0.15800004, z: 0.406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1507,7 +1509,7 @@ Transform:
   m_GameObject: {fileID: 618420591}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.168, z: -0.413}
+  m_LocalPosition: {x: -0.056000233, y: -0.168, z: -0.413}
   m_LocalScale: {x: 0.23986, y: 0.23986, z: 0.23986}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2072,7 +2074,7 @@ Transform:
   m_GameObject: {fileID: 772290699}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.168, z: 0.004}
+  m_LocalPosition: {x: -0.056000233, y: -0.168, z: 0.004}
   m_LocalScale: {x: 0.23986, y: 0.23986, z: 0.23986}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2383,7 +2385,7 @@ Transform:
   m_GameObject: {fileID: 902084879}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.168, z: 0.406}
+  m_LocalPosition: {x: -0.056000233, y: -0.168, z: 0.406}
   m_LocalScale: {x: 0.19567, y: 0.19567, z: 0.19567}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3175,7 +3177,7 @@ Transform:
   m_GameObject: {fileID: 1258346063}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.169, z: 0.005}
+  m_LocalPosition: {x: -0.056000233, y: 0.169, z: 0.005}
   m_LocalScale: {x: 0.1065239, y: 0.24265322, z: 0.27522}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3376,6 +3378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1070191853}
+  obj_txt: Study
 --- !u!114 &1523095515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3434,7 +3437,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3587,6 +3590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1070191853}
+  obj_txt: Go to bed
 --- !u!114 &1559311974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3645,7 +3649,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3773,6 +3777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1070191853}
+  obj_txt: Go to class
 --- !u!114 &1607083363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3831,7 +3836,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -4638,6 +4643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1070191853}
+  obj_txt: Do Homework
 --- !u!54 &2137524402
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4661,7 +4667,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0

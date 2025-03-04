@@ -11,6 +11,7 @@ public class SelectionControl : MonoBehaviour
     public CanvasController controller;
     private Collider task;
     private bool intrig;
+    public string obj_txt;
 
     // Awake is called on spawn
 
@@ -42,7 +43,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event1 = "1. Got ready for school";
+                controller.event1 = "1 " + obj_txt;
 
 
 
@@ -56,7 +57,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event2 = "2. Went to the Doctor's Office";
+                controller.event2 = "2 " + obj_txt;
 
 
             }
@@ -69,7 +70,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event3 = "3. Took the afternoon class";
+                controller.event3 = "3 " + obj_txt;
 
 
 
@@ -83,7 +84,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event4 = "4. Headed home to have lunch";
+                controller.event4 = "4 " + obj_txt;
 
 
             }
@@ -96,7 +97,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event5 = "5. Did homework for class";
+                controller.event5 = "5 " + obj_txt;
 
 
 
@@ -110,7 +111,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event6 = "6. Went to bed for the night";
+                controller.event6 = "6 " + obj_txt;
 
 
 
