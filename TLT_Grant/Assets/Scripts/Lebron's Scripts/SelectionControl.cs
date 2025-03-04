@@ -9,7 +9,7 @@ public class SelectionControl : MonoBehaviour
 
     private OnClick clickControl;
     public CanvasController controller;
-    private Collider task;
+    public Collider task;
     private bool intrig;
     public string obj_txt;
 
@@ -32,10 +32,12 @@ public class SelectionControl : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0) && intrig)
         {
+            task.enabled = false;
+
             if (task.gameObject.CompareTag("Slot 1"))
             {
 
-                Debug.Log("go");
+                //Debug.Log("go");
 
                 Vector3 slotSpace = task.transform.position;
 
