@@ -20,6 +20,8 @@ public class MoveScene : MonoBehaviour
         {
             NextScene(nxtscene);
         }
+
+        
     }
 
 
@@ -37,4 +39,6 @@ public class MoveScene : MonoBehaviour
     {
         SceneManager.LoadScene(nxt);
     }
+
+   
 }
