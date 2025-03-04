@@ -42,6 +42,12 @@ public class OnClick : MonoBehaviour
             gameObject.transform.position = Camera.main.ScreenToWorldPoint(objpos);
 
         }
+        else
+        {
+            //Ding the nothing
+
+        }
+        
 
     }
 

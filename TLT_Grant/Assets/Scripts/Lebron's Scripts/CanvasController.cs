@@ -29,4 +29,5 @@ public class CanvasController : MonoBehaviour
            "\n" + "\n" + "Let's try makin' your schedule." + "\n" + "\n" + event1 + "\n" + event2 + "\n" + event3 + "\n" + event4 + "\n" + event5 + "\n"
            + event6 + "\n";
     }
+
 }

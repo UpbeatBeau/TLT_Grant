@@ -30,21 +30,24 @@ public class SelectionControl : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider task)
+    private void OnTriggerStay(Collider task)
+
     {
+
         if (task.gameObject.CompareTag("Slot 1"))
         {
-            Debug.Log("go");
-        
-            Vector3 slotSpace = task.transform.position;
-            
-            this.gameObject.transform.position = slotSpace;
+            if (Input.GetMouseButtonUp(0)){
+                Debug.Log("go");
 
-            clickControl.movable = false;
+                Vector3 slotSpace = task.transform.position;
 
-            controller.event1 = "1. Got ready for school";
+                this.gameObject.transform.position = slotSpace;
 
+                clickControl.movable = false;
 
+                controller.event1 = "1. Got ready for school";
+
+            }
  
         }
         else if (task.gameObject.CompareTag("Slot 2"))
