@@ -11,6 +11,11 @@ public class GameScript : MonoBehaviour
     public GameObject player;
     public GameObject nxtbutton;
 
+    private void Awake()
+    {
+        ExperienceManager.instance.GetComponent<ExperienceManager>().game3 = true;
+    }
+
     public void YouLose()
     {
         endtext.enabled = true;

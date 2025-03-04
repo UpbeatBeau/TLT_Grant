@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class MoveScene : MonoBehaviour
 {
     public string nxtscene;
+    private ExperienceManager em;
+
+    private void Awake()
+    {
+        em = ExperienceManager.instance.GetComponent<ExperienceManager>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +25,7 @@ public class MoveScene : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             NextScene(nxtscene);
+            em.game1 = true;
         }
 
         

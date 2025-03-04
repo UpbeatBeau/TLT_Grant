@@ -13,8 +13,13 @@ public class Quiz2Manager : MonoBehaviour
     public GameObject[] buttons;
     public GameObject nextbutton;
     public GameObject input;
-   
-    
+
+
+    private void Awake()
+    {
+        ExperienceManager.instance.GetComponent<ExperienceManager>().game2 = true;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
