@@ -45,7 +45,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event1 = "1 " + obj_txt;
+                controller.event1 = "1. " + obj_txt;
 
 
 
@@ -59,7 +59,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event2 = "2 " + obj_txt;
+                controller.event2 = "2. " + obj_txt;
 
 
             }
@@ -72,7 +72,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event3 = "3 " + obj_txt;
+                controller.event3 = "3. " + obj_txt;
 
 
 
@@ -86,7 +86,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event4 = "4 " + obj_txt;
+                controller.event4 = "4. " + obj_txt;
 
 
             }
@@ -99,7 +99,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event5 = "5 " + obj_txt;
+                controller.event5 = "5. " + obj_txt;
 
 
 
@@ -113,7 +113,7 @@ public class SelectionControl : MonoBehaviour
 
                 clickControl.movable = false;
 
-                controller.event6 = "6 " + obj_txt;
+                controller.event6 = "6. " + obj_txt;
 
 
 
