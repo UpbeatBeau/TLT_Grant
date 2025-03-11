@@ -37,7 +37,7 @@ public class SelectionControl : MonoBehaviour
     void Update()
     {
         
-        if(_righthanddevice.TryGetFeatureValue(CommonUsages.gripButton, out bool buttonvalue))
+        if(_righthanddevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.gripButton, out bool buttonvalue))
         {
             grippress = buttonvalue;
         }

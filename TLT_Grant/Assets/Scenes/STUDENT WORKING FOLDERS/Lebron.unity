@@ -458,7 +458,8 @@ MonoBehaviour:
   controller: {fileID: 1070191853}
   task: {fileID: 0}
   obj_txt: Feed the dog
-  leftrelease: {fileID: 5667446173830999989, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  righthandNode: 5
+  grippress: 0
 --- !u!114 &173891674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,7 +541,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 1
-  m_DistanceCalculationMode: 1
+  m_DistanceCalculationMode: 0
   m_SelectMode: 0
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
@@ -1281,7 +1282,8 @@ MonoBehaviour:
   controller: {fileID: 1070191853}
   task: {fileID: 0}
   obj_txt: Dinner with friends
-  leftrelease: {fileID: 5667446173830999989, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  righthandNode: 5
+  grippress: 0
 --- !u!114 &530591376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1363,7 +1365,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 1
-  m_DistanceCalculationMode: 1
+  m_DistanceCalculationMode: 0
   m_SelectMode: 0
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
@@ -3694,7 +3696,8 @@ MonoBehaviour:
   controller: {fileID: 1070191853}
   task: {fileID: 0}
   obj_txt: Study
-  leftrelease: {fileID: 5667446173830999989, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  righthandNode: 5
+  grippress: 0
 --- !u!114 &1523095515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3776,7 +3779,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 1
-  m_DistanceCalculationMode: 1
+  m_DistanceCalculationMode: 0
   m_SelectMode: 0
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
@@ -4060,7 +4063,8 @@ MonoBehaviour:
   controller: {fileID: 1070191853}
   task: {fileID: 0}
   obj_txt: Go to bed
-  leftrelease: {fileID: 5667446173830999989, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  righthandNode: 5
+  grippress: 0
 --- !u!114 &1559311974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4142,7 +4146,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 1
-  m_DistanceCalculationMode: 1
+  m_DistanceCalculationMode: 0
   m_SelectMode: 0
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
@@ -4401,7 +4405,8 @@ MonoBehaviour:
   controller: {fileID: 1070191853}
   task: {fileID: 0}
   obj_txt: Go to class
-  leftrelease: {fileID: 5667446173830999989, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  righthandNode: 5
+  grippress: 0
 --- !u!114 &1607083363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4483,7 +4488,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 1
-  m_DistanceCalculationMode: 1
+  m_DistanceCalculationMode: 0
   m_SelectMode: 0
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
@@ -5424,7 +5429,8 @@ MonoBehaviour:
   controller: {fileID: 1070191853}
   task: {fileID: 0}
   obj_txt: Do Homework
-  leftrelease: {fileID: 5667446173830999989, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  righthandNode: 5
+  grippress: 0
 --- !u!54 &2137524402
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5471,7 +5477,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 1
-  m_DistanceCalculationMode: 1
+  m_DistanceCalculationMode: 0
   m_SelectMode: 0
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
