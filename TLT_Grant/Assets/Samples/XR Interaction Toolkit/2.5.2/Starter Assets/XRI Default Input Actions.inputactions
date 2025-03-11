@@ -2032,7 +2032,7 @@
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -2263,7 +2263,7 @@
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -2285,7 +2285,7 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -2307,7 +2307,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -2329,7 +2329,7 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": true
