@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class SelectionControl : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class SelectionControl : MonoBehaviour
     public Collider task;
     private bool intrig;
     public string obj_txt;
+    public XRNode righthandNode = XRNode.RightHand;
+    public bool grippress;
+
+    private InputDevice _righthanddevice;
 
     // Awake is called on spawn
 
@@ -24,12 +29,107 @@ public class SelectionControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        _righthanddevice = UnityEngine.XR.InputDevices.GetDeviceAtXRNode(righthandNode);
+            
+     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        if(_righthanddevice.TryGetFeatureValue(CommonUsages.gripButton, out bool buttonvalue))
+        {
+            grippress = buttonvalue;
+        }
+        if (grippress! && intrig)
+        {
+            task.enabled = false;
+
+            if (task.gameObject.CompareTag("Slot 1"))
+            {
+
+                //Debug.Log("go");
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event1 = "1. " + obj_txt;
+
+
+
+            }
+            else if (task.gameObject.CompareTag("Slot 2"))
+            {
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event2 = "2. " + obj_txt;
+
+
+            }
+            else if (task.gameObject.CompareTag("Slot 3"))
+            {
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event3 = "3. " + obj_txt;
+
+
+
+            }
+            else if (task.gameObject.CompareTag("Slot 4"))
+            {
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event4 = "4. " + obj_txt;
+
+
+            }
+            else if (task.gameObject.CompareTag("Slot 5"))
+            {
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event5 = "5. " + obj_txt;
+
+
+
+            }
+            else if (task.gameObject.CompareTag("Slot 6"))
+            {
+
+                Vector3 slotSpace = task.transform.position;
+
+                this.gameObject.transform.position = slotSpace;
+
+                clickControl.movable = false;
+
+                controller.event6 = "6. " + obj_txt;
+
+
+
+            }
+        }
         if (Input.GetMouseButtonUp(0) && intrig)
         {
             task.enabled = false;
