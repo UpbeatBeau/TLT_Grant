@@ -2,42 +2,57 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+using TMPro;
 
 public class MoveScene : MonoBehaviour
 {
     public string nxtscene;
     private ExperienceManager em;
-    private Canvas entergame;
-    private bool intrig;
+    public TextMeshPro entergame;
+    public bool intrig;
+    public InputActionReference rtrigger;
+    private bool triggerpress;
 
     private void Awake()
     {
-       
+        entergame.enabled = false;
     }
 
     // Start is called before the first frame update
     void Start()
     {
         em = ExperienceManager.instance.GetComponent<ExperienceManager>();
-        entergame = ExperienceManager.instance.GetComponentInChildren<Canvas>();
-        entergame.enabled = false;
+        
         intrig = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (rtrigger.action.ReadValue<float>() != 0f)
+        {
+            triggerpress = true;
+        }
+        else
+        {
+            triggerpress = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             NextScene(nxtscene);
             em.game1 = true;
         }
+
+
         if (intrig)
         {
             entergame.enabled = true;
-            if (Input.GetKeyDown(KeyCode.E))
+            if (triggerpress)
             {
                 NextScene(nxtscene);
+                em.game1 = true;
             }
         }
         
@@ -47,14 +62,24 @@ public class MoveScene : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        intrig = true;
+       
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("enter");
+            intrig = true;
+        }
         
     }
 
     private void OnTriggerExit(Collider other)
     {
-        intrig = false;
-        entergame.enabled = false;
+        Debug.Log("exit");
+        if (other.CompareTag("Player"))
+        {
+            intrig = false;
+            entergame.enabled = false;
+        }
+       
     }
 
 

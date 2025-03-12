@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
+using UnityEngine.InputSystem;
+
 
 public class SelectionControl : MonoBehaviour
 {
@@ -13,10 +14,12 @@ public class SelectionControl : MonoBehaviour
     public Collider task;
     private bool intrig;
     public string obj_txt;
-    public XRNode righthandNode = XRNode.RightHand;
+    public InputActionReference leftinput;
+    public InputActionReference rightinput;
+    
     public bool grippress;
 
-    private InputDevice _righthanddevice;
+    
 
     // Awake is called on spawn
 
@@ -29,21 +32,25 @@ public class SelectionControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _righthanddevice = UnityEngine.XR.InputDevices.GetDeviceAtXRNode(righthandNode);
+       
             
      }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if(_righthanddevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.gripButton, out bool buttonvalue))
+        if(rightinput.action.ReadValue<float>() != 0f || leftinput.action.ReadValue<float>() != 0f)
         {
-            grippress = buttonvalue;
+            grippress = true;
         }
-        if (grippress! && intrig)
+        else
         {
-            task.enabled = false;
+            grippress = false;
+        }
+        
+        if (grippress == false && intrig)
+        {
+            //task.enabled = false;
 
             if (task.gameObject.CompareTag("Slot 1"))
             {
