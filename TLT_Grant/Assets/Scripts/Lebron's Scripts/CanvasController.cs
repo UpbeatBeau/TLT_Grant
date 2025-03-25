@@ -26,7 +26,7 @@ public class CanvasController : MonoBehaviour
     void Update()
     {
         eventText.text = "Hey there! Welcome to the taskboard." + "\n" + "\n" + "It's a handy little thing that let's us figure out our day." +
-           "\n" + "\n" + "Let's try makin' your schedule." + "\n" + "\n" + event1 + "\n" + event2 + "\n" + event3 + "\n" + event4 + "\n" + event5 + "\n"
+           "\n" + "\n" + "Let's try makin' your schedule. Grab and place the green sticky notes on the board" + "\n" + "\n" + event1 + "\n" + event2 + "\n" + event3 + "\n" + event4 + "\n" + event5 + "\n"
            + event6 + "\n";
     }
 

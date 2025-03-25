@@ -606,15 +606,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.192
+      value: -3.632
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.77
+      value: 0.313
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.115
+      value: 7.157
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6942,7 +6942,7 @@ GameObject:
   - component: {fileID: 2119746707}
   - component: {fileID: 2119746706}
   m_Layer: 0
-  m_Name: teleporting Game 1
+  m_Name: teleporting Lebron Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6960,7 +6960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02df6b6211833a4428a009a400795ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nxtscene: Lebron
+  nxtscene: Lebron2
   entergame: {fileID: 1396160285}
   intrig: 0
   rtrigger: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}

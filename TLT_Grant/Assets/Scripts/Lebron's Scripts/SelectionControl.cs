@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 
 public class SelectionControl : MonoBehaviour
@@ -16,6 +17,9 @@ public class SelectionControl : MonoBehaviour
     public string obj_txt;
     public InputActionReference leftinput;
     public InputActionReference rightinput;
+    public TextMeshPro stickertxt;
+    private bool exiting;
+    private Vector3 ogpos;
     
     public bool grippress;
 
@@ -27,6 +31,9 @@ public class SelectionControl : MonoBehaviour
     {
         intrig = false;
         clickControl = this.GetComponent<OnClick>();
+        stickertxt.text = obj_txt;
+        exiting = false;
+        ogpos = this.gameObject.transform.position;
 
     }
     // Start is called before the first frame update
@@ -136,8 +143,11 @@ public class SelectionControl : MonoBehaviour
 
 
             }
+        }else if(grippress == false && intrig == false)
+        {
+            this.gameObject.transform.position = ogpos;
         }
-        if (Input.GetMouseButtonUp(0) && intrig)
+        /*if (Input.GetMouseButtonUp(0) && intrig)
         {
             task.enabled = false;
 
@@ -225,20 +235,44 @@ public class SelectionControl : MonoBehaviour
 
 
             }
-        }
+        }*/
 
     }
 
     private void OnTriggerEnter(Collider task1)
 
     {
-        task = task1;
-        intrig = true;
+        if (intrig==false)
+        {
+            Debug.Log("Enter");
+            task = task1;
+            intrig = true;
+            exiting = true;
+        }
+        else if (intrig==true) 
+        {
+            Debug.Log("Transition");
+            intrig = false;
+            task = null;
+            task = task1;
+            intrig = true;
+            exiting = false;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        task = null;
-        intrig = false;
+        
+        if (exiting == true)
+        {
+            Debug.Log("Exit");
+            task = null;
+            intrig = false;
+            exiting = false;
+        }else if (exiting == false)
+        {
+            exiting = true;
+        }
+        
     }
 }
