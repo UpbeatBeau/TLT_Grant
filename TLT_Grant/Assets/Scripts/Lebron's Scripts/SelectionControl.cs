@@ -244,14 +244,14 @@ public class SelectionControl : MonoBehaviour
     {
         if (intrig==false)
         {
-            Debug.Log("Enter");
+           // Debug.Log("Enter");
             task = task1;
             intrig = true;
             exiting = true;
         }
         else if (intrig==true) 
         {
-            Debug.Log("Transition");
+            //Debug.Log("Transition");
             intrig = false;
             task = null;
             task = task1;
@@ -265,7 +265,7 @@ public class SelectionControl : MonoBehaviour
         
         if (exiting == true)
         {
-            Debug.Log("Exit");
+            //Debug.Log("Exit");
             task = null;
             intrig = false;
             exiting = false;
