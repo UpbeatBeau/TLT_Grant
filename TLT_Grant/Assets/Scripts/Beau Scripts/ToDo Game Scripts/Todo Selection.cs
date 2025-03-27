@@ -17,9 +17,12 @@ public class TodoSelection : MonoBehaviour
     public InputActionReference rightinput;
     public TextMeshPro stickertxt;
     private Vector3 ogpos;
+    private Quaternion ogrot;
     public Collider task;
+    private TaskText tsktxt;
     private Rigidbody rb;
     public bool hasmoved;
+    public bool selected;
 
     public bool grippress;
 
@@ -28,8 +31,11 @@ public class TodoSelection : MonoBehaviour
         intrig = false;
         exiting = false;
         ogpos = this.gameObject.transform.position;
+        ogrot = this.gameObject.transform.rotation;
         rb = this.gameObject.GetComponent<Rigidbody>();
+        rb.isKinematic = true;
         hasmoved = false;
+        selected = false;
     }
 
     // Start is called before the first frame update
@@ -50,27 +56,27 @@ public class TodoSelection : MonoBehaviour
         {
             grippress= false;
         }
+        if(grippress == false && rb.velocity.y < 0 && selected)
+        {
+            hasmoved = true;
+        }
         if ( intrig && rb.velocity == Vector3.zero && grippress == false && hasmoved)
         {
             //task.enabled = false;
+            hasmoved = false;
+            selected = false;
 
             if (task.gameObject.CompareTag("Slot 1"))
             {
 
-                Debug.Log("go");
+                tsktxt.TaskFull();
 
                 Vector3 slotSpace = task.transform.position;
 
                 this.gameObject.transform.position = slotSpace;
 
                 rb.isKinematic = true;
-
-                
-
-               
-
-
-
+         
             }
             else if (task.gameObject.CompareTag("Slot 2"))
             {
@@ -133,9 +139,12 @@ public class TodoSelection : MonoBehaviour
         }
         else if (intrig == false && rb.velocity == Vector3.zero && grippress == false && hasmoved)
         {
-            Debug.Log("Home");
+            //Debug.Log("Home");
             this.gameObject.transform.position = ogpos;
+            this.gameObject.transform.rotation = ogrot;
+            rb.isKinematic = true;
             hasmoved = false;
+            selected = false;
         }
     }
     private void OnTriggerEnter(Collider task1)
@@ -145,6 +154,7 @@ public class TodoSelection : MonoBehaviour
         {
             //Debug.Log("Enter");
             task = task1;
+            tsktxt = task1.gameObject.GetComponentInParent<TaskText>();
             intrig = true;
             exiting = true;
         }
@@ -154,6 +164,7 @@ public class TodoSelection : MonoBehaviour
             intrig = false;
             task = null;
             task = task1;
+            tsktxt = task1.gameObject.GetComponentInParent<TaskText>();
             intrig = true;
             exiting = false;
         }
@@ -166,6 +177,7 @@ public class TodoSelection : MonoBehaviour
         {
             // Debug.Log("Exit");
             task = null;
+            tsktxt = null;
             intrig = false;
             exiting = false;
         }
@@ -176,9 +188,10 @@ public class TodoSelection : MonoBehaviour
 
     }
     
-    public void HasMoved()
+   public void SelectCube()
     {
-        hasmoved = true;
+        selected = true;
+        rb.isKinematic = false;
     }
    
 }
