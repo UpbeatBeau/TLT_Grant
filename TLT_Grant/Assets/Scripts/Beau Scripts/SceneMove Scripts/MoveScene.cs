@@ -8,7 +8,7 @@ using TMPro;
 public class MoveScene : MonoBehaviour
 {
     public string nxtscene;
-    private ExperienceManager em;
+    //private ExperienceManager em;
     public TextMeshPro entergame;
     public bool intrig;
     public InputActionReference rtrigger;
@@ -22,7 +22,7 @@ public class MoveScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        em = ExperienceManager.instance.GetComponent<ExperienceManager>();
+      //  em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         
         intrig = false;
     }
@@ -42,7 +42,7 @@ public class MoveScene : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             NextScene(nxtscene);
-            em.game1 = true;
+         //   em.game1 = true;
         }
 
 
@@ -52,7 +52,7 @@ public class MoveScene : MonoBehaviour
             if (triggerpress)
             {
                 NextScene(nxtscene);
-                em.game1 = true;
+             //   em.game1 = true;
             }
         }
         

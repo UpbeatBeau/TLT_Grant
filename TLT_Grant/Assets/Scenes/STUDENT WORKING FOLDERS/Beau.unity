@@ -3483,7 +3483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=red>Todo List
+  m_text: <color=green>Todo List
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7651,10 +7651,10 @@ PrefabInstance:
       value: "Welcome to the Time Management Experience. In this VR experience you
         will go through four different minigames to understand the skills used in
         time management. \n\t1. Go to the <color=red> Calendar <color=white>to make
-        a Schedule\n\t2. Go to the Center table to .....\n\t3. Go to the Arcade Machine
-        to win the race\n\t4. Go to ... to play ...\nAfter you finish a minigame
-        the square next to it will turn green\nOnce you finish all four you can take
-        off the headset."
+        a Schedule\n\t2. Go to the center table to make a <color=green>To Do List
+        <color=white>\n\t3. Go to the Arcade Machine to win the race\n\t4. Go to
+        ... to play ...\nAfter you finish a minigame the square next to it will turn
+        green\nOnce you finish all four you can take off the headset."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

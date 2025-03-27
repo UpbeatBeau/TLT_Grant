@@ -66,7 +66,7 @@ public class TodoSelection : MonoBehaviour
             hasmoved = false;
             selected = false;
 
-            if (task.gameObject.CompareTag("Slot 1"))
+            if (task.gameObject.CompareTag("Slot 1") && tsktxt.full == false)
             {
 
                 tsktxt.TaskFull();
@@ -76,75 +76,17 @@ public class TodoSelection : MonoBehaviour
                 this.gameObject.transform.position = slotSpace;
 
                 rb.isKinematic = true;
-         
-            }
-            else if (task.gameObject.CompareTag("Slot 2"))
-            {
-
-                Vector3 slotSpace = task.transform.position;
-
-                this.gameObject.transform.position = slotSpace;
-
-                
-
-                
 
             }
-            else if (task.gameObject.CompareTag("Slot 3"))
+            else
             {
-
-                Vector3 slotSpace = task.transform.position;
-
-                this.gameObject.transform.position = slotSpace;
-
-                
-
-
-
+                CubeHome();
             }
-            else if (task.gameObject.CompareTag("Slot 4"))
-            {
-
-                Vector3 slotSpace = task.transform.position;
-
-                this.gameObject.transform.position = slotSpace;
-
-                
-
-
-            }
-            else if (task.gameObject.CompareTag("Slot 5"))
-            {
-
-                Vector3 slotSpace = task.transform.position;
-
-                this.gameObject.transform.position = slotSpace;
-
-              
-
-
-
-            }
-            else if (task.gameObject.CompareTag("Slot 6"))
-            {
-
-                Vector3 slotSpace = task.transform.position;
-
-                this.gameObject.transform.position = slotSpace;
-
             
-
-
-            }
         }
         else if (intrig == false && rb.velocity == Vector3.zero && grippress == false && hasmoved)
         {
-            //Debug.Log("Home");
-            this.gameObject.transform.position = ogpos;
-            this.gameObject.transform.rotation = ogrot;
-            rb.isKinematic = true;
-            hasmoved = false;
-            selected = false;
+            CubeHome();
         }
     }
     private void OnTriggerEnter(Collider task1)
@@ -176,6 +118,7 @@ public class TodoSelection : MonoBehaviour
         if (exiting == true)
         {
             // Debug.Log("Exit");
+            //other.GetComponentInParent<TaskText>().ClearTask();
             task = null;
             tsktxt = null;
             intrig = false;
@@ -192,6 +135,15 @@ public class TodoSelection : MonoBehaviour
     {
         selected = true;
         rb.isKinematic = false;
+    }
+
+    private void CubeHome()
+    {
+        this.gameObject.transform.position = ogpos;
+        this.gameObject.transform.rotation = ogrot;
+        rb.isKinematic = true;
+        hasmoved = false;
+        selected = false;
     }
    
 }
