@@ -39,6 +39,9 @@ public class CanvasController : MonoBehaviour
             eventText.text = "You did it!" + "\n" + "\n" + "What a beautiful schedule you put together"  + "\n" + "\n" + event1 + "\n" + event2 + "\n" + event3 + "\n" + event4 + "\n" + event5 + "\n"
            + event6 + "\n";
             em.game1 = true;
+        }else if(event1 != "1. " && event2 != "2. " && event3 != "3. " && event4 != "4. " && event5 != "5. " && event6 != "6. "){
+            eventText.text = "Keep Trying!" + "\n" + "\n" + "Maybe there is a better order for your daily events." + "\n" + "\n" + event1 + "\n" + event2 + "\n" + event3 + "\n" + event4 + "\n" + event5 + "\n"
+          + event6 + "\n";
         }
     }
 
