@@ -20,6 +20,7 @@ public class SelectionControl : MonoBehaviour
     public TextMeshPro stickertxt;
     private bool exiting;
     private Vector3 ogpos;
+    private Quaternion ogrot;
     
     public bool grippress;
 
@@ -34,6 +35,7 @@ public class SelectionControl : MonoBehaviour
         stickertxt.text = obj_txt;
         exiting = false;
         ogpos = this.gameObject.transform.position;
+        ogrot = this.gameObject.transform.rotation;
 
     }
     // Start is called before the first frame update
@@ -68,6 +70,8 @@ public class SelectionControl : MonoBehaviour
 
                 this.gameObject.transform.position = slotSpace;
 
+                this.gameObject.transform.rotation = ogrot;
+
                 clickControl.movable = false;
 
                 controller.event1 = "1. " + obj_txt;
@@ -80,7 +84,10 @@ public class SelectionControl : MonoBehaviour
 
                 Vector3 slotSpace = task.transform.position;
 
+       
                 this.gameObject.transform.position = slotSpace;
+
+                this.gameObject.transform.rotation = ogrot;
 
                 clickControl.movable = false;
 
@@ -95,6 +102,8 @@ public class SelectionControl : MonoBehaviour
 
                 this.gameObject.transform.position = slotSpace;
 
+                this.gameObject.transform.rotation = ogrot;
+
                 clickControl.movable = false;
 
                 controller.event3 = "3. " + obj_txt;
@@ -107,7 +116,10 @@ public class SelectionControl : MonoBehaviour
 
                 Vector3 slotSpace = task.transform.position;
 
+
                 this.gameObject.transform.position = slotSpace;
+
+                this.gameObject.transform.rotation = ogrot;
 
                 clickControl.movable = false;
 
@@ -120,7 +132,10 @@ public class SelectionControl : MonoBehaviour
 
                 Vector3 slotSpace = task.transform.position;
 
+
                 this.gameObject.transform.position = slotSpace;
+
+                this.gameObject.transform.rotation = ogrot;
 
                 clickControl.movable = false;
 
@@ -134,7 +149,10 @@ public class SelectionControl : MonoBehaviour
 
                 Vector3 slotSpace = task.transform.position;
 
+
                 this.gameObject.transform.position = slotSpace;
+
+                this.gameObject.transform.rotation = ogrot;
 
                 clickControl.movable = false;
 
@@ -146,6 +164,7 @@ public class SelectionControl : MonoBehaviour
         }else if(grippress == false && intrig == false)
         {
             this.gameObject.transform.position = ogpos;
+            this.gameObject.transform.rotation = ogrot;
         }
         /*if (Input.GetMouseButtonUp(0) && intrig)
         {
