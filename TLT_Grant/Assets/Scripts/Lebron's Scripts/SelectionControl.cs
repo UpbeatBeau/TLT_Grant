@@ -21,6 +21,7 @@ public class SelectionControl : MonoBehaviour
     private bool exiting;
     private Vector3 ogpos;
     private Quaternion ogrot;
+    private RaycastHit hit;
     
     public bool grippress;
 
@@ -163,9 +164,23 @@ public class SelectionControl : MonoBehaviour
             }
         }else if(grippress == false && intrig == false)
         {
-            this.gameObject.transform.position = ogpos;
-            this.gameObject.transform.rotation = ogrot;
+           // this.gameObject.transform.position = ogpos;
+            //this.gameObject.transform.rotation = ogrot;
         }
+
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, Mathf.Infinity,Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false){
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
+            Debug.Log("Did Hit");
+            task = hit.collider;
+            intrig = true;
+        }
+       
+        
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
+           
+        
+
+
         /*if (Input.GetMouseButtonUp(0) && intrig)
         {
             task.enabled = false;
@@ -258,7 +273,7 @@ public class SelectionControl : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider task1)
+    /*private void OnTriggerEnter(Collider task1)
 
     {
         if (intrig==false)
@@ -293,5 +308,5 @@ public class SelectionControl : MonoBehaviour
             exiting = true;
         }
         
-    }
+    }*/
 }

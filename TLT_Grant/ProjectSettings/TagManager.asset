@@ -11,6 +11,8 @@ TagManager:
   - Slot 4
   - Slot 5
   - Slot 6
+  - Anchor
+  - Sticky
   layers:
   - Default
   - TransparentFX
