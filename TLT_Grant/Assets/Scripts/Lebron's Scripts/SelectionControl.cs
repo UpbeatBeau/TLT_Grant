@@ -169,8 +169,8 @@ public class SelectionControl : MonoBehaviour
         }
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, Mathf.Infinity,Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false){
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
-            Debug.Log("Did Hit");
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
+            //Debug.Log("Did Hit");
             task = hit.collider;
             intrig = true;
         }
