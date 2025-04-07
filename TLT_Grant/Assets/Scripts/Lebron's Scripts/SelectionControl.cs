@@ -164,8 +164,8 @@ public class SelectionControl : MonoBehaviour
             }
         }else if(grippress == false && intrig == false)
         {
-           // this.gameObject.transform.position = ogpos;
-            //this.gameObject.transform.rotation = ogrot;
+           this.gameObject.transform.position = ogpos;
+           this.gameObject.transform.rotation = ogrot;
         }
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, Mathf.Infinity,Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false){
@@ -173,6 +173,10 @@ public class SelectionControl : MonoBehaviour
             Debug.Log("Did Hit");
             task = hit.collider;
             intrig = true;
+        }
+        else
+        {
+            intrig = false;
         }
        
         
