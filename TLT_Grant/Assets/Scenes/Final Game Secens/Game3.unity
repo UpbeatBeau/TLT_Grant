@@ -4916,6 +4916,10 @@ PrefabInstance:
       propertyPath: finTask
       value: Brainstorm
       objectReference: {fileID: 0}
+    - target: {fileID: 3916571605707998081, guid: 961e6c50ad51d6d4a878023b2102d040, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4724131103257242854, guid: 961e6c50ad51d6d4a878023b2102d040, type: 3}
       propertyPath: m_Name
       value: Task 1
