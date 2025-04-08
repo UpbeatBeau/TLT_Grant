@@ -26,7 +26,7 @@ public class GameTxt : MonoBehaviour
     {
         if(taskCount == 6)
         {
-            walltxt.text = "Congratulations! You broke the project into smaller, more manageable tasks using a To Do list.";
+            walltxt.text = "Congratulations! You just made a To Do List!";
             em.game2 = true;
             
         }

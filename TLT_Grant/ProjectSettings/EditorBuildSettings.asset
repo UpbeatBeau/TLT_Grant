@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/STUDENT WORKING FOLDERS/Lebron.unity
     guid: 55896403d6c47a246ab220d2cb34480a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final Game Secens/Lebron2.unity
     guid: de237aa99d58f4045a94a6ceb0ed0987
   - enabled: 1

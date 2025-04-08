@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.UIElements;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class TodoSelection : MonoBehaviour
 {
@@ -76,6 +77,8 @@ public class TodoSelection : MonoBehaviour
                 this.gameObject.transform.position = slotSpace;
 
                 rb.isKinematic = true;
+
+                rb.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
 
             }
             else

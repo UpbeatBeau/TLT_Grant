@@ -17,7 +17,7 @@ public class BookSelection : MonoBehaviour
     private Quaternion ogrot;
     private RaycastHit hit;
     public float offsety;
-    private Outline lasthit;
+    private BookSpots lasthit;
 
     public bool grippress;
 
@@ -66,21 +66,28 @@ public class BookSelection : MonoBehaviour
             //this.gameObject.transform.rotation = ogrot;
         }
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false)
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1000f, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false)
         {
             //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
             //Debug.Log("Did Hit");
             task = hit.collider;
             intrig = true;
-            var outline = task.gameObject.AddComponent<Outline>();
-            lasthit = outline;
-            outline.OutlineMode = Outline.Mode.OutlineAll;
-            outline.OutlineColor = Color.yellow;
-            outline.OutlineWidth = 5f;
+            if (lasthit == null)
+            {   
+                lasthit = task.gameObject.GetComponent<BookSpots>();
+                lasthit.on = true;
+                
+            }
+            else
+            {
+                lasthit.on = false;
+                lasthit = null;
+            }
         }
         else
         {
-            lasthit.OutlineMode = Outline.Mode.OutlineHidden;
+            lasthit.on = false;
+            lasthit = null;
             intrig = false;
             
         }
