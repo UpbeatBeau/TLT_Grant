@@ -14,6 +14,7 @@ public class CanvasController : MonoBehaviour
     public string event4 = "4. ";
     public string event5 = "5. ";
     public string event6 = "6. ";
+    public int correctslot = 0;
 
 
     private void Awake()

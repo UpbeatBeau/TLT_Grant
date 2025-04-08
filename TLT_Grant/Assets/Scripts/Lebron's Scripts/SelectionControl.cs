@@ -22,6 +22,8 @@ public class SelectionControl : MonoBehaviour
     private Vector3 ogpos;
     private Quaternion ogrot;
     private RaycastHit hit;
+    public string goalslot;
+    private bool beencorrect;
     
     public bool grippress;
 
@@ -37,6 +39,7 @@ public class SelectionControl : MonoBehaviour
         exiting = false;
         ogpos = this.gameObject.transform.position;
         ogrot = this.gameObject.transform.rotation;
+        beencorrect = false;
 
     }
     // Start is called before the first frame update
@@ -61,6 +64,15 @@ public class SelectionControl : MonoBehaviour
         if (grippress == false && intrig)
         {
             //task.enabled = false;
+            if (task.gameObject.CompareTag(goalslot) && !beencorrect)
+            {
+                controller.correctslot++;
+                beencorrect= true;
+            }else if (task.gameObject.CompareTag(goalslot) == false && beencorrect)
+            {
+                controller.correctslot--;
+                beencorrect = false;
+            }
 
             if (task.gameObject.CompareTag("Slot 1"))
             {
@@ -166,6 +178,11 @@ public class SelectionControl : MonoBehaviour
         {
            this.gameObject.transform.position = ogpos;
            this.gameObject.transform.rotation = ogrot;
+            if(beencorrect == true)
+            {
+                controller.correctslot--;
+                beencorrect = false;
+            }
         }
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, Mathf.Infinity,Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false){
