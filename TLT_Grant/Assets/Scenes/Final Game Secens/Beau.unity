@@ -861,15 +861,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.607
+      value: -3.84
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.419
+      value: -0.255
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.155
+      value: 7.038
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7653,8 +7653,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   words: {fileID: 758933583}
-  nextbut: {fileID: 93012079}
-  prevbut: {fileID: 359448283}
+  nextbut: {fileID: 93012078}
+  prevbut: {fileID: 359448281}
+  checklist: {fileID: 1263748965}
 --- !u!114 &1183913255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7930,6 +7931,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1263748965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2944746718728118578, guid: cd2f65a01af79a24cb2b232002aa0ebb, type: 3}
+  m_PrefabInstance: {fileID: 7172788870599812043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1275652441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12286,7 +12292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1835970461582579943, guid: 3e07eccb5e6f459d886de95044adb1d9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.128
+      value: 0.185
       objectReference: {fileID: 0}
     - target: {fileID: 1835970461582579943, guid: 3e07eccb5e6f459d886de95044adb1d9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16115,7 +16121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2944746718728118578, guid: cd2f65a01af79a24cb2b232002aa0ebb, type: 3}
       propertyPath: m_Name
-      value: Board02 (1)
+      value: Checklist
       objectReference: {fileID: 0}
     - target: {fileID: 7397896224752804672, guid: cd2f65a01af79a24cb2b232002aa0ebb, type: 3}
       propertyPath: m_text

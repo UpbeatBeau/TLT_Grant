@@ -12,6 +12,7 @@ public class SelectionControl : MonoBehaviour
 
     private OnClick clickControl;
     public CanvasController controller;
+    public CalendarMenu calendarMenu;
     public Collider task;
     private bool intrig;
     public string obj_txt;
@@ -66,11 +67,11 @@ public class SelectionControl : MonoBehaviour
             //task.enabled = false;
             if (task.gameObject.CompareTag(goalslot) && !beencorrect)
             {
-                controller.correctslot++;
+                calendarMenu.correctslot++;
                 beencorrect= true;
             }else if (task.gameObject.CompareTag(goalslot) == false && beencorrect)
             {
-                controller.correctslot--;
+                calendarMenu.correctslot--;
                 beencorrect = false;
             }
 
