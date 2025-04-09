@@ -21,8 +21,12 @@ public class MenuController : MonoBehaviour
     {
         checklist.SetActive(false);
         page = 0;
-        em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         
+        
+    }
+    private void Start()
+    {
+        em = ExperienceManager.instance.GetComponent<ExperienceManager>();
     }
     private void Update()
     {
