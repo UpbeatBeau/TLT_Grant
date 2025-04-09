@@ -92,6 +92,7 @@ public class MenuController : MonoBehaviour
     }
     public void CloseHelp()
     {
-        this.GetComponentInParent<GameObject>().SetActive(false);
+        this.GetComponentInParent<MeshRenderer>().enabled = false;
+        this.GetComponent<Canvas>().enabled = false;
     }
 }

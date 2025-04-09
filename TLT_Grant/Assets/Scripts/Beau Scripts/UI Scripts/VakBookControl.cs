@@ -6,6 +6,7 @@ using UnityEngine;
 public class VakBookControl : MonoBehaviour
 {
     //Vars
+    private ExperienceManager em;
     public TextMeshProUGUI words;
     public GameObject nextbut;
     public GameObject prevbut;
@@ -17,6 +18,7 @@ public class VakBookControl : MonoBehaviour
     private void Awake()
     {
         //exitstuff.SetActive(false);
+        em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         page = 0;
     }
     private void Update()

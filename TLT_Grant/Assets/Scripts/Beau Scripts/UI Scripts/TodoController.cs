@@ -14,10 +14,12 @@ public class TodoController : MonoBehaviour
     private int page;
     public int correctslot;
     public GameObject exitstuff;
+    private ExperienceManager em;
 
 
     private void Awake()
     {
+        em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         youwin.enabled = false;
         exitstuff.SetActive(false);
         page = 0;
@@ -76,6 +78,7 @@ public class TodoController : MonoBehaviour
         {
             exitstuff.SetActive(true);
             youwin.enabled = true;
+            em.game2 = true;
         }
     }
     public void Pageturn()

@@ -13,10 +13,12 @@ public class CalendarMenu : MonoBehaviour
     public int correctslot;
     public GameObject exitstuff;
     public GameObject celebration;
-    
+    private ExperienceManager em;
+
 
     private void Awake()
     {
+        em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         exitstuff.SetActive(false);
         page = 0;
     }
@@ -72,6 +74,7 @@ public class CalendarMenu : MonoBehaviour
         {
             exitstuff.SetActive(true);
             celebration.SetActive(true);
+            em.game1 = true;
         }
 
        
