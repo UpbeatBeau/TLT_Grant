@@ -68,7 +68,7 @@ public class BookSelection : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1000f, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false)
         {
-            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100, Color.yellow);
             //Debug.Log("Did Hit");
             task = hit.collider;
             intrig = true;
@@ -91,5 +91,6 @@ public class BookSelection : MonoBehaviour
             intrig = false;
             
         }
+        //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100, Color.yellow);
     }
 }

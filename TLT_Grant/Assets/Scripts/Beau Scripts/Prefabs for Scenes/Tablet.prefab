@@ -284,7 +284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 81510752381089414}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Grab Transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 1154786824735408591}
   - component: {fileID: 7832461389859800186}
   - component: {fileID: 7939283386358963615}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Tablet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1011,7 +1011,7 @@ GameObject:
   - component: {fileID: 500101815406987565}
   - component: {fileID: 5911593872496051633}
   - component: {fileID: 6434709547569365464}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Readme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
