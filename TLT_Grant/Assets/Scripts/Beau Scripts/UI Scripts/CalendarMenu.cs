@@ -12,10 +12,13 @@ public class CalendarMenu : MonoBehaviour
     private int page;
     public int correctslot;
     public GameObject exitstuff;
-    
+    public GameObject celebration;
+    private ExperienceManager em;
+
 
     private void Awake()
     {
+        em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         exitstuff.SetActive(false);
         page = 0;
     }
@@ -70,7 +73,11 @@ public class CalendarMenu : MonoBehaviour
         if(correctslot == 6)
         {
             exitstuff.SetActive(true);
+            celebration.SetActive(true);
+            em.game1 = true;
         }
+
+       
     }
     public void Pageturn()
     {

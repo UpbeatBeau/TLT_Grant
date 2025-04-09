@@ -9,7 +9,7 @@ public class MoveScene : MonoBehaviour
 {
     public string nxtscene;
     //private ExperienceManager em;
-    public TextMeshPro entergame;
+    public Canvas entergame;
     public bool intrig;
     public InputActionReference rtrigger;
     private bool triggerpress;
@@ -39,21 +39,17 @@ public class MoveScene : MonoBehaviour
             triggerpress = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            NextScene(nxtscene);
-         //   em.game1 = true;
-        }
+        
 
 
         if (intrig)
         {
             entergame.enabled = true;
-            if (triggerpress)
+            /*if (triggerpress)
             {
                 NextScene(nxtscene);
              //   em.game1 = true;
-            }
+            }*/
         }
         
         
