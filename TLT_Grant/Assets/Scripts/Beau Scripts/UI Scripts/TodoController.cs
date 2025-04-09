@@ -6,9 +6,11 @@ using UnityEngine;
 public class TodoController : MonoBehaviour
 {
     //Vars
+    public TextMeshPro youwin;
     public TextMeshProUGUI words;
     public GameObject nextbut;
     public GameObject prevbut;
+    public GameObject closebut;
     private int page;
     public int correctslot;
     public GameObject exitstuff;
@@ -16,6 +18,7 @@ public class TodoController : MonoBehaviour
 
     private void Awake()
     {
+        youwin.enabled = false;
         exitstuff.SetActive(false);
         page = 0;
     }
@@ -51,10 +54,12 @@ public class TodoController : MonoBehaviour
         if (page == 5)
         {
             nextbut.SetActive(false);
+            closebut.SetActive(true);
 
         }
         else
         {
+            closebut.SetActive(false);
             nextbut.SetActive(true);
         }
 
@@ -67,9 +72,10 @@ public class TodoController : MonoBehaviour
             prevbut.SetActive(true);
         }
 
-        if (correctslot == 6)
+        if (correctslot == 5)
         {
             exitstuff.SetActive(true);
+            youwin.enabled = true;
         }
     }
     public void Pageturn()
@@ -86,5 +92,11 @@ public class TodoController : MonoBehaviour
             page--;
         }
 
+    }
+
+    public void CloseHelp()
+    {
+        this.GetComponentInParent<MeshRenderer>().enabled = false;
+        this.GetComponent<Canvas>().enabled = false;
     }
 }

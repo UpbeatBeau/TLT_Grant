@@ -11,6 +11,7 @@ public class MenuController : MonoBehaviour
     public TextMeshProUGUI words;
     public GameObject nextbut;
     public GameObject prevbut;
+    public GameObject closebut;
     private int page;
     public GameObject checklist;
     public GameObject objectives;
@@ -55,9 +56,11 @@ public class MenuController : MonoBehaviour
             nextbut.SetActive(false);
             checklist.SetActive(true);
             objectives.SetActive(true);
+            closebut.SetActive(true);
         }
         else
         {
+            closebut.SetActive(false);
             nextbut.SetActive(true);
         }
 
@@ -86,5 +89,9 @@ public class MenuController : MonoBehaviour
             page--;
         }
       
+    }
+    public void CloseHelp()
+    {
+        this.GetComponentInParent<GameObject>().SetActive(false);
     }
 }

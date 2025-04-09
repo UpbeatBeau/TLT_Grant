@@ -66,7 +66,7 @@ public class SelectionControl : MonoBehaviour
         if (grippress == false && intrig)
         {
             //task.enabled = false;
-            /*if (task.gameObject.CompareTag(goalslot) && !beencorrect)
+            if (task.gameObject.CompareTag(goalslot) && !beencorrect)
             {
                 calendarMenu.correctslot++;
                 beencorrect= true;
@@ -74,7 +74,7 @@ public class SelectionControl : MonoBehaviour
             {
                 calendarMenu.correctslot--;
                 beencorrect = false;
-            }*/
+            }
 
             if (task.gameObject.CompareTag("Slot 1"))
             {

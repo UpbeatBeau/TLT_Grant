@@ -17,6 +17,9 @@ public class Todoobject : MonoBehaviour
     private RaycastHit hit;
     public bool grippress;
     public bool stupid;
+    public string goal;
+    public bool beencorrect;
+    public TodoController tdc;
 
 
 
@@ -27,6 +30,7 @@ public class Todoobject : MonoBehaviour
         intrig = false;
         ogpos = this.gameObject.transform.position;
         ogrot = this.gameObject.transform.rotation;
+        beencorrect = false;
 
     }
     // Start is called before the first frame update
@@ -62,6 +66,15 @@ public class Todoobject : MonoBehaviour
             {
                 this.gameObject.transform.rotation = ogrot * Quaternion.Euler(new Vector3 (0,0,90)) ;
             }
+
+            if (task.gameObject.name == goal && !beencorrect)
+            {
+                Debug.Log("DID IT");
+                tdc.correctslot++;
+                task.gameObject.GetComponent<Outline>().OutlineColor = Color.green;
+                beencorrect = true;
+            }
+            
 
         }
         else if (grippress == false && intrig == false)
@@ -107,5 +120,14 @@ public class Todoobject : MonoBehaviour
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * 100, Color.yellow);
         }
         //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * 100, Color.yellow);
+    }
+
+    public void todoSelected()
+    {
+        if (beencorrect)
+        {
+            tdc.correctslot--;
+            beencorrect = false;
+        }
     }
 }

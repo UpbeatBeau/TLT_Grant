@@ -12,6 +12,7 @@ public class CalendarMenu : MonoBehaviour
     private int page;
     public int correctslot;
     public GameObject exitstuff;
+    public GameObject celebration;
     
 
     private void Awake()
@@ -70,7 +71,10 @@ public class CalendarMenu : MonoBehaviour
         if(correctslot == 6)
         {
             exitstuff.SetActive(true);
+            celebration.SetActive(true);
         }
+
+       
     }
     public void Pageturn()
     {

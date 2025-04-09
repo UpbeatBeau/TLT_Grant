@@ -87,4 +87,8 @@ public class VakBookControl : MonoBehaviour
         }
 
     }
+    public void CloseHelp()
+    {
+        this.GetComponentInParent<GameObject>().SetActive(false);
+    }
 }
