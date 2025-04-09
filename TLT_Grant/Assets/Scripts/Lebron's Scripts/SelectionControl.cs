@@ -14,7 +14,7 @@ public class SelectionControl : MonoBehaviour
     public CanvasController controller;
     public CalendarMenu calendarMenu;
     public Collider task;
-    private bool intrig;
+    public bool intrig;
     public string obj_txt;
     public InputActionReference leftinput;
     public InputActionReference rightinput;
@@ -22,6 +22,7 @@ public class SelectionControl : MonoBehaviour
     private bool exiting;
     private Vector3 ogpos;
     private Quaternion ogrot;
+    private Quaternion placerot = new Quaternion (0, 0.707106829f, 0, -0.707106829f);
     private RaycastHit hit;
     public string goalslot;
     private bool beencorrect;
@@ -65,7 +66,7 @@ public class SelectionControl : MonoBehaviour
         if (grippress == false && intrig)
         {
             //task.enabled = false;
-            if (task.gameObject.CompareTag(goalslot) && !beencorrect)
+            /*if (task.gameObject.CompareTag(goalslot) && !beencorrect)
             {
                 calendarMenu.correctslot++;
                 beencorrect= true;
@@ -73,7 +74,7 @@ public class SelectionControl : MonoBehaviour
             {
                 calendarMenu.correctslot--;
                 beencorrect = false;
-            }
+            }*/
 
             if (task.gameObject.CompareTag("Slot 1"))
             {
@@ -84,7 +85,7 @@ public class SelectionControl : MonoBehaviour
 
                 this.gameObject.transform.position = slotSpace;
 
-                this.gameObject.transform.rotation = ogrot;
+                this.gameObject.transform.rotation =  placerot;
 
                 clickControl.movable = false;
 
@@ -101,7 +102,7 @@ public class SelectionControl : MonoBehaviour
        
                 this.gameObject.transform.position = slotSpace;
 
-                this.gameObject.transform.rotation = ogrot;
+                this.gameObject.transform.rotation =  placerot;
 
                 clickControl.movable = false;
 
@@ -116,7 +117,7 @@ public class SelectionControl : MonoBehaviour
 
                 this.gameObject.transform.position = slotSpace;
 
-                this.gameObject.transform.rotation = ogrot;
+                this.gameObject.transform.rotation =  placerot;
 
                 clickControl.movable = false;
 
@@ -133,7 +134,7 @@ public class SelectionControl : MonoBehaviour
 
                 this.gameObject.transform.position = slotSpace;
 
-                this.gameObject.transform.rotation = ogrot;
+                this.gameObject.transform.rotation =  placerot;
 
                 clickControl.movable = false;
 
@@ -149,7 +150,7 @@ public class SelectionControl : MonoBehaviour
 
                 this.gameObject.transform.position = slotSpace;
 
-                this.gameObject.transform.rotation = ogrot;
+                this.gameObject.transform.rotation = placerot;
 
                 clickControl.movable = false;
 
@@ -166,7 +167,7 @@ public class SelectionControl : MonoBehaviour
 
                 this.gameObject.transform.position = slotSpace;
 
-                this.gameObject.transform.rotation = ogrot;
+                this.gameObject.transform.rotation = placerot;
 
                 clickControl.movable = false;
 
@@ -186,9 +187,9 @@ public class SelectionControl : MonoBehaviour
             }
         }
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, Mathf.Infinity,Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false){
-            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
-            //Debug.Log("Did Hit");
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, 1000,Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false){
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
+            Debug.Log("Did Hit");
             task = hit.collider;
             intrig = true;
         }
@@ -196,11 +197,11 @@ public class SelectionControl : MonoBehaviour
         {
             intrig = false;
         }
-       
-        
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
-           
-        
+
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * 1000, Color.yellow);
+        //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * hit.distance, Color.yellow);
+
+
 
 
         /*if (Input.GetMouseButtonUp(0) && intrig)

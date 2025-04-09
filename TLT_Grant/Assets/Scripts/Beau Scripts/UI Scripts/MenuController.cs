@@ -7,11 +7,13 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
     //Vars
+    public TextMeshPro readme;
     public TextMeshProUGUI words;
     public GameObject nextbut;
     public GameObject prevbut;
     private int page;
     public GameObject checklist;
+    public GameObject objectives;
 
     private void Awake()
     {
@@ -52,6 +54,7 @@ public class MenuController : MonoBehaviour
         {
             nextbut.SetActive(false);
             checklist.SetActive(true);
+            objectives.SetActive(true);
         }
         else
         {
@@ -61,10 +64,12 @@ public class MenuController : MonoBehaviour
         if (page == 0)
         {
             prevbut.SetActive(false);
+            readme.enabled = true;
         }
         else
         {
             prevbut.SetActive(true);
+            readme.enabled = false;
         }
     }
     public void Pageturn()

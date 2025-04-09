@@ -44,7 +44,7 @@ public class CalendarMenu : MonoBehaviour
                 break;
 
             case 5:
-                words.text = "Check here to see your progress" + "\n You have: " + correctslot + "scheduled events correct!";
+                words.text = "Check here to see your progress" + "\n You have: " + correctslot + " scheduled events correct!";
                 break;
         }
 
