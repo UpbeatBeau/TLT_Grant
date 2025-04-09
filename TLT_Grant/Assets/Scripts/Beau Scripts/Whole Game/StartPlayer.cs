@@ -12,13 +12,13 @@ public class StartPlayer : MonoBehaviour
 
     private void Awake()
     { 
-        transform.position = startpos;
-        transform.rotation = startrot;
+        
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.position = startpos;
+        //transform.rotation = startrot;
     }
 
     // Update is called once per frame

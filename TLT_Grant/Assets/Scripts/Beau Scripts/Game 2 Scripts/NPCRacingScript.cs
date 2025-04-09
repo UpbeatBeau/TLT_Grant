@@ -15,8 +15,8 @@ public class NPCRacingScript : MonoBehaviour
 
     private void Awake()
     {
-        int moveback = ExperienceManager.instance.GetComponent<ExperienceManager>().collected;
-        startingpos = this.transform.position - new Vector3(moveback*10,0,0);
+        //int moveback = ExperienceManager.instance.GetComponent<ExperienceManager>().collected;
+        //startingpos = this.transform.position - new Vector3(moveback*10,0,0);
         this.transform.position = startingpos;
     }
 

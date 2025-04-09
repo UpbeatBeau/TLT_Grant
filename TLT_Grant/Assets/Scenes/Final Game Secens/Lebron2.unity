@@ -1070,7 +1070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.618
+      value: -1.533
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1154,7 +1154,7 @@ GameObject:
   - component: {fileID: 152603391}
   - component: {fileID: 152603390}
   m_Layer: 0
-  m_Name: Pos II (1)
+  m_Name: Tuesday Afternoon
   m_TagString: Slot 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7425,11 +7425,11 @@ MonoBehaviour:
   calendarMenu: {fileID: 35329883}
   task: {fileID: 0}
   intrig: 0
-  obj_txt: Study
+  obj_txt: Thursday Evening
   leftinput: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightinput: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   stickertxt: {fileID: 951223270}
-  goalslot: 
+  goalslot: Thursday Evening
   grippress: 0
 --- !u!114 &310792594
 MonoBehaviour:
@@ -7493,7 +7493,7 @@ Transform:
   m_GameObject: {fileID: 325508739}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.69676, y: 1.507159, z: -13.490414}
+  m_LocalPosition: {x: 6.245, y: 1.507159, z: -13.653}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7512,7 +7512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nxtscene: Beau
-  entergame: {fileID: 1246191975}
+  entergame: {fileID: 0}
   intrig: 0
   rtrigger: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!65 &325508742
@@ -8057,6 +8057,139 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3, y: 0.4000002, z: 3}
   m_Center: {x: 0, y: 0.20000005, z: 0}
+--- !u!1 &479957808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 479957809}
+  - component: {fileID: 479957812}
+  - component: {fileID: 479957811}
+  - component: {fileID: 479957810}
+  m_Layer: 0
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &479957809
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479957808}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1322192903}
+  m_Father: {fileID: 2018775820}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &479957810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479957808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 479957811}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 325508741}
+        m_TargetAssemblyTypeName: MoveScene, Assembly-CSharp
+        m_MethodName: NextScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Beau
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &479957811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479957808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &479957812
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479957808}
+  m_CullTransparentMesh: 1
 --- !u!1 &539616235
 GameObject:
   m_ObjectHideFlags: 0
@@ -8086,12 +8219,12 @@ Transform:
   m_LocalScale: {x: 0.99009883, y: 0.9900991, z: 0.99009883}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1310659470}
   - {fileID: 1477804733}
   - {fileID: 1555802411}
   - {fileID: 310792589}
   - {fileID: 2115706340}
   - {fileID: 1612415252}
-  - {fileID: 1310659470}
   m_Father: {fileID: 200877157}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &583939605
@@ -8999,7 +9132,7 @@ GameObject:
   - component: {fileID: 790093947}
   - component: {fileID: 790093946}
   m_Layer: 0
-  m_Name: Pos VI (1)
+  m_Name: Monday Evening
   m_TagString: Slot 6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11714,7 +11847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1246191975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11989,7 +12122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c7d316d628c15a4b8fc8ab961994ba1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3504
+      value: 2.582
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c7d316d628c15a4b8fc8ab961994ba1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11997,7 +12130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c7d316d628c15a4b8fc8ab961994ba1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.974
+      value: -2.879
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c7d316d628c15a4b8fc8ab961994ba1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12274,11 +12407,11 @@ MonoBehaviour:
   calendarMenu: {fileID: 35329883}
   task: {fileID: 0}
   intrig: 0
-  obj_txt: Do Homework
+  obj_txt: Monday Morning
   leftinput: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightinput: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   stickertxt: {fileID: 423723320}
-  goalslot: 
+  goalslot: Monday Morning
   grippress: 0
 --- !u!114 &1310659475
 MonoBehaviour:
@@ -12315,6 +12448,140 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.003996348, y: 0.075, z: 0.07499997}
   m_Center: {x: 0.0019984203, y: -2.8395764e-17, z: 0.00000024400651}
+--- !u!1 &1322192902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1322192903}
+  - component: {fileID: 1322192905}
+  - component: {fileID: 1322192904}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1322192903
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322192902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 479957809}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1322192904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322192902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Enter Task
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1322192905
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322192902}
+  m_CullTransparentMesh: 1
 --- !u!1 &1358219764
 GameObject:
   m_ObjectHideFlags: 0
@@ -13114,11 +13381,11 @@ MonoBehaviour:
   calendarMenu: {fileID: 35329883}
   task: {fileID: 0}
   intrig: 0
-  obj_txt: Go to Class
+  obj_txt: Tuesday Afternoon
   leftinput: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightinput: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   stickertxt: {fileID: 830312956}
-  goalslot: 
+  goalslot: Tuesday Afternoon
   grippress: 0
 --- !u!114 &1477804738
 MonoBehaviour:
@@ -13168,7 +13435,7 @@ GameObject:
   - component: {fileID: 1488862479}
   - component: {fileID: 1488862478}
   m_Layer: 0
-  m_Name: Pos III
+  m_Name: Wednesday Morning
   m_TagString: Slot 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13540,7 +13807,7 @@ Transform:
   m_GameObject: {fileID: 1495553212}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.765, y: 1.741, z: -2.193}
+  m_LocalPosition: {x: -1.765, y: 1.846, z: -2.475}
   m_LocalScale: {x: 0.44315, y: 0.44315, z: 0.009603503}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13629,7 +13896,7 @@ GameObject:
   - component: {fileID: 1551346975}
   - component: {fileID: 1551346974}
   m_Layer: 0
-  m_Name: Pos I
+  m_Name: Monday Morning
   m_TagString: Slot 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14028,11 +14295,11 @@ MonoBehaviour:
   calendarMenu: {fileID: 35329883}
   task: {fileID: 0}
   intrig: 0
-  obj_txt: Feed the Dog
+  obj_txt: Wednesday Morning
   leftinput: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightinput: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   stickertxt: {fileID: 1444880529}
-  goalslot: 
+  goalslot: Wednesday Morning
   grippress: 0
 --- !u!114 &1555802416
 MonoBehaviour:
@@ -14570,11 +14837,11 @@ MonoBehaviour:
   calendarMenu: {fileID: 35329883}
   task: {fileID: 0}
   intrig: 0
-  obj_txt: Go to bed
+  obj_txt: Monday Evening
   leftinput: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightinput: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   stickertxt: {fileID: 706125318}
-  goalslot: Slot 6
+  goalslot: Monday Evening
   grippress: 0
 --- !u!114 &1612415257
 MonoBehaviour:
@@ -14988,7 +15255,7 @@ GameObject:
   - component: {fileID: 1687385905}
   - component: {fileID: 1687385904}
   m_Layer: 0
-  m_Name: Pos V
+  m_Name: Friday Morning
   m_TagString: Slot 5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16463,7 +16730,7 @@ GameObject:
   - component: {fileID: 1941468970}
   - component: {fileID: 1941468969}
   m_Layer: 0
-  m_Name: Pos IV (2)
+  m_Name: Thursday Evening
   m_TagString: Slot 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16555,6 +16822,128 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941468967}
   m_Mesh: {fileID: -5495902117074765545, guid: f6fbea0521b823145a6952529b3b8f1a, type: 3}
+--- !u!1 &2018775819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2018775820}
+  - component: {fileID: 2018775824}
+  - component: {fileID: 2018775823}
+  - component: {fileID: 2018775822}
+  - component: {fileID: 2018775821}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2018775820
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018775819}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -12.347002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 479957809}
+  m_Father: {fileID: 2138896104}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.798999, y: 1.518}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2018775821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018775819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
+--- !u!114 &2018775822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018775819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2018775823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018775819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!223 &2018775824
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018775819}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1001 &2038150893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17004,11 +17393,11 @@ MonoBehaviour:
   calendarMenu: {fileID: 35329883}
   task: {fileID: 0}
   intrig: 0
-  obj_txt: Dinner with friends
+  obj_txt: Friday Morning
   leftinput: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightinput: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   stickertxt: {fileID: 812348031}
-  goalslot: 
+  goalslot: Friday Morning
   grippress: 0
 --- !u!114 &2115706345
 MonoBehaviour:
@@ -17208,6 +17597,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2018775820}
   - {fileID: 1246191977}
   - {fileID: 325508740}
   - {fileID: 1280484685}

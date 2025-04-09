@@ -9,7 +9,7 @@ public class ExperienceManager : MonoBehaviour
     public bool game2 = false;
     public bool game3 = false;
     public bool game4 = false;
-    public int collected = 0;
+    public int gamecomp = 0;
 
     private void Awake()
     {

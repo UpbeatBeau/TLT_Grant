@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Final Game Secens/Beau.unity
     guid: a20c812174c35df459211986252f2158
   - enabled: 0
@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/STUDENT WORKING FOLDERS/Lebron.unity
     guid: 55896403d6c47a246ab220d2cb34480a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Final Game Secens/Lebron2.unity
     guid: de237aa99d58f4045a94a6ceb0ed0987
   - enabled: 0
@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Game Secens/Todo.unity
     guid: 7930d606ace2cb346982dbe0110b73a9
+  - enabled: 1
+    path: Assets/Scenes/Final Game Secens/Vak 1.unity
+    guid: aca965138001dc748bd88a66c8c7d868
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}

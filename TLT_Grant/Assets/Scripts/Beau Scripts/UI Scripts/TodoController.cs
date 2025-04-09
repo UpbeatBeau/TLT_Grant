@@ -79,6 +79,7 @@ public class TodoController : MonoBehaviour
             exitstuff.SetActive(true);
             youwin.enabled = true;
             em.game2 = true;
+            em.gamecomp++;
         }
     }
     public void Pageturn()

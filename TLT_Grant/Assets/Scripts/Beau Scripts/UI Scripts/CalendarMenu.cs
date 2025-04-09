@@ -31,7 +31,7 @@ public class CalendarMenu : MonoBehaviour
                 break;
 
             case 1:
-                words.text = "To place a sticky not grab it, and then aim it at the location you want it to go to and let go of the third finger button.";
+                words.text = "To place a sticky note grab it, and then place it at the location you want it to go to and let go of the third finger button.";
                 break;
 
             case 2:
@@ -75,6 +75,7 @@ public class CalendarMenu : MonoBehaviour
             exitstuff.SetActive(true);
             celebration.SetActive(true);
             em.game1 = true;
+            em.gamecomp++;
         }
 
        

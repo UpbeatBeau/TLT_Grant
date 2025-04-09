@@ -10,6 +10,7 @@ public class VakBookControl : MonoBehaviour
     public TextMeshProUGUI words;
     public GameObject nextbut;
     public GameObject prevbut;
+    public GameObject closebut;
     private int page;
     public int correctslot;
     //public GameObject exitstuff;
@@ -20,44 +21,47 @@ public class VakBookControl : MonoBehaviour
         //exitstuff.SetActive(false);
         em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         page = 0;
+        em.game4 = true;
     }
     private void Update()
     {
         switch (page)
         {
             case 0:
-                words.text = "Welcome to the table. In front of you is the large project of writing a research paper in 6 weeks, it may seem like a huge task at first!";
+                words.text = "Welcome to the bookshelf! here you will be given the chance to choose which book fits in which shelf to learn about procrastination.";
                 break;
 
             case 1:
-                words.text = "In order to complete a large task, we can make a to do list by separating when to do tasks and prioritizing smaller, more manageable tasks.";
+                words.text = "Each shelf is labeled with a reason why procrastination occurs. Likewise each book is labeled with a possible solution";
                 break;
 
             case 2:
-                words.text = "To separate this paper open the box by grabbing the lid with your third finger button and take out each task by grabbing the items with your third finger button.";
+                words.text = "using your third finger button, grab the book that has the solution you want and put it on the shelf of the problem it can fix.";
                 break;
 
             case 3:
-                words.text = "Organize each task on the table by placing them in the section marked on the table. Each week will only have one task assigned to it.";
+                words.text = "There are no wrong answers and each shelf can hold up to 4 books.";
                 break;
 
             case 4:
-                words.text = "Once you place the correct item in the section the week will turn green!";
+                words.text = "After you place your solutions to the problems on the shelf you are finished! Remember you can use these tools in your real life to help.";
                 break;
 
             case 5:
-                words.text = "After you create a working todo list by separating the larger project into smaller ones, the exit will appear to your right.";
+                words.text = "When you are finished, the exit will be located to your right.";
                 break;
         }
 
         if (page == 5)
         {
             nextbut.SetActive(false);
+            closebut.SetActive(true);
 
         }
         else
         {
             nextbut.SetActive(true);
+            closebut.SetActive(false);
         }
 
         if (page == 0)
@@ -91,6 +95,7 @@ public class VakBookControl : MonoBehaviour
     }
     public void CloseHelp()
     {
-        this.GetComponentInParent<GameObject>().SetActive(false);
+        this.GetComponentInParent<MeshRenderer>().enabled = false;
+        this.GetComponent<Canvas>().enabled = false;
     }
 }
