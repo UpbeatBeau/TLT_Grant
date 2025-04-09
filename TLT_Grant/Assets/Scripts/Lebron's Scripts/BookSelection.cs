@@ -66,7 +66,7 @@ public class BookSelection : MonoBehaviour
             //this.gameObject.transform.rotation = ogrot;
         }
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1000f, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false)
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, 1000f, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide) && hit.collider.CompareTag("Sticky") == false)
         {
             //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100, Color.yellow);
             //Debug.Log("Did Hit");
