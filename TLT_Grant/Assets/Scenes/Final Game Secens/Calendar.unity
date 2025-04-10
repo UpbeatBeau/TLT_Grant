@@ -367,7 +367,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35329876}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 1.14}
   m_LocalScale: {x: 0.002, y: 0.002, z: 0.23072308}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 46829959}
   - component: {fileID: 46829958}
   m_Layer: 0
-  m_Name: Pos III (2)
+  m_Name: Wenesday Evening
   m_TagString: Slot 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -599,7 +599,7 @@ GameObject:
   - component: {fileID: 52012233}
   - component: {fileID: 52012232}
   m_Layer: 0
-  m_Name: Pos IV
+  m_Name: Thursday Morning
   m_TagString: Slot 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -913,7 +913,7 @@ GameObject:
   - component: {fileID: 139281123}
   - component: {fileID: 139281122}
   m_Layer: 0
-  m_Name: Pos II (2)
+  m_Name: Tuesday Evening
   m_TagString: Slot 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7071,6 +7071,12 @@ PrefabInstance:
       addedObject: {fileID: 1551346973}
     - targetCorrespondingSourceObject: {fileID: 4082375478442091883, guid: ac99db3f46045e947be0ce1448498af2, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 638299536}
+    - targetCorrespondingSourceObject: {fileID: 4082375478442091883, guid: ac99db3f46045e947be0ce1448498af2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 790093945}
+    - targetCorrespondingSourceObject: {fileID: 4082375478442091883, guid: ac99db3f46045e947be0ce1448498af2, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 597853250}
     - targetCorrespondingSourceObject: {fileID: 4082375478442091883, guid: ac99db3f46045e947be0ce1448498af2, type: 3}
       insertIndex: -1
@@ -7105,12 +7111,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4082375478442091883, guid: ac99db3f46045e947be0ce1448498af2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 875214781}
-    - targetCorrespondingSourceObject: {fileID: 4082375478442091883, guid: ac99db3f46045e947be0ce1448498af2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 638299536}
-    - targetCorrespondingSourceObject: {fileID: 4082375478442091883, guid: ac99db3f46045e947be0ce1448498af2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 790093945}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac99db3f46045e947be0ce1448498af2, type: 3}
 --- !u!4 &306574011 stripped
@@ -8314,7 +8314,7 @@ GameObject:
   - component: {fileID: 597853252}
   - component: {fileID: 597853251}
   m_Layer: 0
-  m_Name: Pos II
+  m_Name: Tuesday Morning
   m_TagString: Slot 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8756,7 +8756,7 @@ GameObject:
   - component: {fileID: 638299538}
   - component: {fileID: 638299537}
   m_Layer: 0
-  m_Name: Pos VI
+  m_Name: Monday Afternoon
   m_TagString: Slot 6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9766,7 +9766,7 @@ GameObject:
   - component: {fileID: 875214783}
   - component: {fileID: 875214782}
   m_Layer: 0
-  m_Name: Pos V (2)
+  m_Name: Friday Evening
   m_TagString: Slot 5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10099,7 +10099,7 @@ GameObject:
   - component: {fileID: 947653514}
   - component: {fileID: 947653513}
   m_Layer: 0
-  m_Name: Pos III (1)
+  m_Name: Wendesday Afternoon
   m_TagString: Slot 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11738,7 +11738,7 @@ GameObject:
   - component: {fileID: 1228830287}
   - component: {fileID: 1228830286}
   m_Layer: 0
-  m_Name: Pos V (1)
+  m_Name: Friday Afternoon
   m_TagString: Slot 5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13385,7 +13385,7 @@ MonoBehaviour:
   leftinput: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightinput: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   stickertxt: {fileID: 830312956}
-  goalslot: Tuesday Afternoon
+  goalslot: Afternoon
   grippress: 0
 --- !u!114 &1477804738
 MonoBehaviour:
@@ -14955,7 +14955,7 @@ GameObject:
   - component: {fileID: 1664900363}
   - component: {fileID: 1664900362}
   m_Layer: 0
-  m_Name: Pos IV (1)
+  m_Name: Thursday Afternoon
   m_TagString: Slot 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

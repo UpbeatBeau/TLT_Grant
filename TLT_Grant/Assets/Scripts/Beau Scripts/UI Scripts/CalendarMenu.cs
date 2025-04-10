@@ -39,7 +39,7 @@ public class CalendarMenu : MonoBehaviour
                 break;
 
             case 3:
-                words.text = "Once you put all the stickynotes in the correct time slots, the Exit will open up!";
+                words.text = "Once you put all the sticky notes in the correct time slots, the Exit will open up!";
                 break;
 
             case 4:
@@ -47,7 +47,7 @@ public class CalendarMenu : MonoBehaviour
                 break;
 
             case 5:
-                words.text = "Check here to see your progress" + "\n You have: " + correctslot + " scheduled events correct!";
+                words.text = "Check here to see your progress." + "\n You have: " + correctslot + " scheduled events correct!";
                 break;
         }
 

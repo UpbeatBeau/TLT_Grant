@@ -1,58 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
 
-public class VakBookControl : MonoBehaviour
+public class WhiteboardController : MonoBehaviour
 {
     //Vars
-    private ExperienceManager em;
     public TextMeshProUGUI words;
     public GameObject nextbut;
     public GameObject prevbut;
     public GameObject closebut;
     private int page;
     public int correctslot;
-    //public GameObject exitstuff;
+    public GameObject exitstuff;
+    private ExperienceManager em;
 
 
     private void Awake()
     {
-        //exitstuff.SetActive(false);
         em = ExperienceManager.instance.GetComponent<ExperienceManager>();
+        exitstuff.SetActive(false);
         page = 0;
-        em.game4 = true;
     }
     private void Update()
     {
         switch (page)
         {
             case 0:
-                words.text = "Welcome to the bookshelf! Here you will be given the chance to choose which book fits in which shelf to learn about procrastination.";
+                words.text = "Welcome to the Whiteboard! In this activity you will read the white board and then press (second finger) the button that says next on the board.";
                 break;
 
             case 1:
-                words.text = "Each shelf is labeled with a situation in which procrastination occurs. Likewise each color of book is labeled with a possible solution.";
+                words.text = "This white board is all about procrastination and what it means to procrastinate.";
                 break;
 
             case 2:
-                words.text = "Using your third finger button, grab the book that has the solution you want and put it on the shelf of the problem it can fix.";
+                words.text = "Once you have finished reading all the information on the white board the exit will appear to the left of the white board.";
                 break;
 
             case 3:
-                words.text = "Based on each situation, choose each book with appropriate coping strategy and place it into each bookshelf.";
+                words.text = "Hope you have fun!";
                 break;
 
-            case 4:
-                words.text = "There are no wrong answers and there are enough of each book to put one on each shelf.";
-                break;
-
-            case 5:
-                words.text = "Remember these skills can transfer to your real life too! When you are finished, the exit will be located to your right.";
-                break;
+           
         }
 
-        if (page == 5)
+        if (page == 3)
         {
             nextbut.SetActive(false);
             closebut.SetActive(true);
@@ -75,12 +68,16 @@ public class VakBookControl : MonoBehaviour
 
         if (correctslot == 6)
         {
-            //exitstuff.SetActive(true);
+            exitstuff.SetActive(true);
+            em.game1 = true;
+            em.gamecomp++;
         }
+
+
     }
     public void Pageturn()
     {
-        if (page < 5)
+        if (page < 3)
         {
             page++;
         }

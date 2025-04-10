@@ -66,11 +66,11 @@ public class SelectionControl : MonoBehaviour
         if (grippress == false && intrig)
         {
             //task.enabled = false;
-            if (task.gameObject.name == goalslot && !beencorrect)
+            if (task.gameObject.name.Contains(goalslot) == true && !beencorrect)
             {
                 calendarMenu.correctslot++;
                 beencorrect= true;
-            }else if (task.gameObject.name == goalslot == false && beencorrect)
+            }else if (task.gameObject.name.Contains(goalslot) == false && beencorrect)
             {
                 calendarMenu.correctslot--;
                 beencorrect = false;

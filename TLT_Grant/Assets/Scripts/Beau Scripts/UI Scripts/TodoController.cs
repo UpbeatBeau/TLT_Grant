@@ -29,15 +29,15 @@ public class TodoController : MonoBehaviour
         switch (page)
         {
             case 0:
-                words.text = "Welcome to the table. In front of you is the large project of writing a research paper in 6 weeks, it may seem like a huge task at first!";
+                words.text = "Welcome to the table. You have five weeks to complete your final paper. Use the provided tasks to create a timeline and assign each task to a specific time frame.";
                 break;
 
             case 1:
-                words.text = "In order to complete a large task, we can make a to do list by separating when to do tasks and prioritizing smaller, more manageable tasks.";
+                words.text = "In order to complete a large task, we can make a to-do list by separating when to do tasks and prioritizing smaller, more manageable tasks.";
                 break;
 
             case 2:
-                words.text = "To separate this paper open the box by grabbing the lid with your third finger button and take out each task by grabbing the items with your third finger button.";
+                words.text = "To separate this paper open the box by grabbing (third finger button) the lid and moving it to the side. Take out each task by grabbing (third finger button) the items.";
                 break;
 
             case 3:
@@ -49,7 +49,7 @@ public class TodoController : MonoBehaviour
                 break;
 
             case 5:
-                words.text = "After you create a working todo list by separating the larger project into smaller ones, the exit will appear to your right.";
+                words.text = "After you create a working to-do list by separating the larger project into smaller ones, the exit will appear to your right.";
                 break;
         }
 

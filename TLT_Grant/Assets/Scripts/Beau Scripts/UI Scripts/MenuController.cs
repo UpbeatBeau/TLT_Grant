@@ -35,7 +35,7 @@ public class MenuController : MonoBehaviour
             switch (page)
             {
                 case 0:
-                    words.text = "Welcome to the space to learn time management.\r\nTo help you get started lets go over some basics of VR. \r\n If you want to press a button or activate something you use the trigger that your pointer finger is on \n" +
+                    words.text = "Welcome to the space to learn time management.\r\nTo help you get started let's go over some basics of VR. \r\n If you want to press a button or activate something you use the trigger that your pointer finger is on \n" +
                         "Press the next button to go to the next page.";
                     break;
 
@@ -48,7 +48,7 @@ public class MenuController : MonoBehaviour
                     break;
 
                 case 3:
-                    words.text = "There are multiple ways to move around the room in VR. you can try walking around yourself, or you can move around with the joystick in your left hand.";
+                    words.text = "There are multiple ways to move around the room in VR. You can try walking around yourself, or you can move around with the joystick in your left hand.";
                     break;
 
                 case 4:
