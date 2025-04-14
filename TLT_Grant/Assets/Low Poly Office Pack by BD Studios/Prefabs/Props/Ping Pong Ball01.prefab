@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 458894014392756875}
   - component: {fileID: 3598809558881002798}
   - component: {fileID: 1591315963627770340}
-  - component: {fileID: 2208054535121079611}
+  - component: {fileID: 7796744966120487473}
   m_Layer: 0
   m_Name: Ping Pong Ball01
   m_TagString: Untagged
@@ -26,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942801534672875569}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3598809558881002798
 MeshFilter:
@@ -84,16 +84,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2208054535121079611
-BoxCollider:
+--- !u!136 &7796744966120487473
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942801534672875569}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.037423674, y: 0.039349616, z: 0.039349526}
+  m_Radius: 0.019674763
+  m_Height: 0.039349616
+  m_Direction: 1
   m_Center: {x: -0.0000000055879354, y: 0.000000007450581, z: -0.0000000055879354}

@@ -12934,6 +12934,63 @@ Transform:
   - {fileID: 491189001}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1779267776
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5720544264614145025, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.0223827
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720544264614145025, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.355
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720544264614145025, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.063
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720544264614145025, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720544264614145025, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720544264614145025, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720544264614145025, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720544264614145025, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720544264614145025, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720544264614145025, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6648824882629692515, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
+      propertyPath: m_Name
+      value: Ping Pong Ball01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6433fbb48ccf3047b410d4b53d9e37c, type: 3}
 --- !u!65 &1785954260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21403,3 +21460,4 @@ SceneRoots:
   - {fileID: 1017288636}
   - {fileID: 1668529192}
   - {fileID: 101517195}
+  - {fileID: 1779267776}

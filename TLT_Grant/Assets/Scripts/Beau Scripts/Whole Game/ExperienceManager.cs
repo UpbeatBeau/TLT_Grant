@@ -10,6 +10,7 @@ public class ExperienceManager : MonoBehaviour
     public bool game3 = false;
     public bool game4 = false;
     public int gamecomp = 0;
+    public GameObject ball;
 
     private void Awake()
     {
@@ -23,6 +24,15 @@ public class ExperienceManager : MonoBehaviour
             Destroy(gameObject);
         }
         
-       
+       ball.SetActive(false);
     }
+
+    private void Update()
+    {
+        if (gamecomp == 4)
+        {
+            ball.SetActive(true);
+        }
+    }
+
 }
