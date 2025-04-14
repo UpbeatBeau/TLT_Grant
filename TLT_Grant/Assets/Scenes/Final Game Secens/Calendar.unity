@@ -1395,7 +1395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.466
+      value: -1.697
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8610,7 +8610,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3741456043557666769, guid: ac99db3f46045e947be0ce1448498af2, type: 3}
       propertyPath: m_Name
-      value: Board01
+      value: Calendar Board
       objectReference: {fileID: 0}
     - target: {fileID: 3741456043557666769, guid: ac99db3f46045e947be0ce1448498af2, type: 3}
       propertyPath: m_Layer
@@ -24855,7 +24855,7 @@ MonoBehaviour:
   leftinput: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rightinput: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   stickertxt: {fileID: 1335898350}
-  goalslot: wednesday
+  goalslot: Wednesday
   grippress: 0
 --- !u!114 &1807707919
 MonoBehaviour:
