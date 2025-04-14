@@ -35,7 +35,7 @@ public class CalendarMenu : MonoBehaviour
                 break;
 
             case 2:
-                words.text = "You can see you already have something scheduled for Monday Morning! Making a schedule is a great way to organize and manage your time.";
+                words.text = "You can see you already have Dinner scheduled! Making a schedule is a great way to organize and manage your time.";
                 break;
 
             case 3:
@@ -70,7 +70,7 @@ public class CalendarMenu : MonoBehaviour
             prevbut.SetActive(true);
         }
 
-        if(correctslot == 6)
+        if(correctslot == 21)
         {
             exitstuff.SetActive(true);
             celebration.SetActive(true);

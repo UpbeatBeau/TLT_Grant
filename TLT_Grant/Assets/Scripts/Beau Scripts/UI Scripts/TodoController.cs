@@ -15,6 +15,7 @@ public class TodoController : MonoBehaviour
     public int correctslot;
     public GameObject exitstuff;
     private ExperienceManager em;
+    public List<Outline> outlines;
 
 
     private void Awake()
@@ -74,7 +75,7 @@ public class TodoController : MonoBehaviour
             prevbut.SetActive(true);
         }
 
-        if (correctslot == 5)
+        if (correctslot == 6)
         {
             exitstuff.SetActive(true);
             youwin.enabled = true;
@@ -102,5 +103,16 @@ public class TodoController : MonoBehaviour
     {
         this.GetComponentInParent<MeshRenderer>().enabled = false;
         this.GetComponent<Canvas>().enabled = false;
+    }
+
+    public void Cleanup()
+    {
+        foreach(Outline o in outlines)
+        {
+            if(o.OutlineColor == Color.red)
+            {
+                o.OutlineColor = Color.white;
+            }
+        }
     }
 }

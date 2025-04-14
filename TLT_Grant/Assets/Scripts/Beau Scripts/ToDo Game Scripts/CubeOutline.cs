@@ -7,6 +7,8 @@ public class CubeOutline : MonoBehaviour
 {
     //vars
     Outline outline;
+    public TodoController todoController;
+    
     private void Awake()
     {
         outline = this.gameObject.AddComponent<Outline>();
@@ -14,6 +16,7 @@ public class CubeOutline : MonoBehaviour
         outline.OutlineColor = Color.white;
         outline.OutlineMode = Outline.Mode.OutlineAll;
         outline.OutlineWidth = 6;
+        todoController.outlines.Add(outline);
     }
     
     public void OutOFF()

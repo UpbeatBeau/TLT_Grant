@@ -58,6 +58,19 @@ public class Todoobject : MonoBehaviour
 
             this.gameObject.transform.position = slotSpace;
 
+            if (task.gameObject.name.Contains(goal) == true && !beencorrect)
+            {
+                Debug.Log("DID IT");
+                tdc.correctslot++;
+                task.gameObject.GetComponent<Outline>().OutlineColor = Color.green;
+                beencorrect = true;
+            }
+            else if(task.gameObject.name.Contains(goal) == false && !beencorrect)
+            {
+                task.gameObject.GetComponent<Outline>().OutlineColor = Color.red;
+            }
+
+
             if (!stupid)
             {
                 this.gameObject.transform.rotation = new Quaternion(0, -1, 0, 1);
@@ -67,17 +80,10 @@ public class Todoobject : MonoBehaviour
                 this.gameObject.transform.rotation = ogrot * Quaternion.Euler(new Vector3 (0,0,90)) ;
             }
 
-            if (task.gameObject.name == goal && !beencorrect)
-            {
-                Debug.Log("DID IT");
-                tdc.correctslot++;
-                task.gameObject.GetComponent<Outline>().OutlineColor = Color.green;
-                beencorrect = true;
-            }
-            
+          
 
         }
-        else if (grippress == false && intrig == false)
+        else if (grippress == false && intrig == false && !beencorrect)
         {
             //this.gameObject.transform.position = ogpos;
             //this.gameObject.transform.rotation = ogrot;
