@@ -16,6 +16,7 @@ public class TodoController : MonoBehaviour
     public GameObject exitstuff;
     private ExperienceManager em;
     public List<Outline> outlines;
+    public List<GameObject> paperobjects;
 
 
     private void Awake()
@@ -30,7 +31,7 @@ public class TodoController : MonoBehaviour
         switch (page)
         {
             case 0:
-                words.text = "Welcome to the table. You have five weeks to complete your final paper. Use the provided tasks to create a timeline and assign each task to a specific time frame.";
+                words.text = "Welcome to the table. You have six weeks to complete your final paper. Use the provided tasks to create a timeline and assign each task to a specific time frame.";
                 break;
 
             case 1:
@@ -38,7 +39,7 @@ public class TodoController : MonoBehaviour
                 break;
 
             case 2:
-                words.text = "To separate this paper open the box by grabbing (third finger button) the lid and moving it to the side. Take out each task by grabbing (third finger button) the items.";
+                words.text = "To separate this paper open the box by grabbing (middle finger button) the lid and moving it to the side. Take out each task by grabbing (middle finger button) the items.";
                 break;
 
             case 3:
@@ -113,6 +114,16 @@ public class TodoController : MonoBehaviour
             {
                 o.OutlineColor = Color.white;
             }
+        }
+    }
+
+    public void PopOut()
+    {
+        foreach (GameObject a in paperobjects)
+        {
+            a.SetActive(true);
+            a.gameObject.transform.localPosition = a.GetComponent<Todoobject>().moveto;
+            a.gameObject.transform.localRotation = a.GetComponent<Todoobject>().movetorot;
         }
     }
 }

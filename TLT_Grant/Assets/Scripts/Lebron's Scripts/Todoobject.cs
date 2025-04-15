@@ -11,6 +11,8 @@ public class Todoobject : MonoBehaviour
     private bool intrig;
     public InputActionReference leftinput;
     public InputActionReference rightinput;
+    public Vector3 moveto;
+    public Quaternion movetorot;
     private Vector3 ogpos;
     private Quaternion ogrot;
     private Quaternion rot;

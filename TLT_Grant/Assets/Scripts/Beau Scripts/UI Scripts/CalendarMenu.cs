@@ -27,15 +27,15 @@ public class CalendarMenu : MonoBehaviour
         switch (page)
         {
             case 0:
-                words.text = "Welcome to the Calendar! In this activity you will grab (third finger button) the green sticky notes and place them on your schedule to make a schedule.";
+                words.text = "Welcome to the Calendar! In this activity you will grab (middle finger button) the green sticky notes and place them on your schedule to make a schedule.";
                 break;
 
             case 1:
-                words.text = "To place a sticky note grab it, and then place it at the location you want it to go to and let go of the third finger button.";
+                words.text = "To place a sticky note grab it, and then place it at the location you want it to go to and let go of the middle finger button.";
                 break;
 
             case 2:
-                words.text = "You can see you already have Dinner scheduled! Making a schedule is a great way to organize and manage your time.";
+                words.text = "You can see that you already have Dinner scheduled! Making a schedule is a great way to organize and manage your time.";
                 break;
 
             case 3:

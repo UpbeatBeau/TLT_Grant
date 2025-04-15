@@ -27,7 +27,7 @@ public class WhiteboardController : MonoBehaviour
         switch (page)
         {
             case 0:
-                words.text = "Welcome to the Whiteboard! In this activity you will read the white board and then press (second finger) the button that says next on the board.";
+                words.text = "Welcome to the Whiteboard! In this activity you will read the white board and then press (pointer finger) the button that says next on the board.";
                 break;
 
             case 1:

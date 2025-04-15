@@ -36,7 +36,7 @@ public class VakBookControl : MonoBehaviour
                 break;
 
             case 2:
-                words.text = "Using your third finger button, grab the book that has the solution you want and put it on the shelf of the problem it can fix.";
+                words.text = "Using your middle finger button, grab the book that has the solution you want and put it on the shelf of the problem it can fix.";
                 break;
 
             case 3:

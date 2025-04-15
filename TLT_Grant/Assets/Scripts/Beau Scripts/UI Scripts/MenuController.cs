@@ -40,7 +40,7 @@ public class MenuController : MonoBehaviour
                     break;
 
                 case 1:
-                    words.text = "When in VR, if you want to grab or pick something up you should point at it and press the button that your third finger is on.\r\n";
+                    words.text = "When in VR, if you want to grab or pick something up you should point at it or touch it and press the button that your middle finger is on.\r\n";
                     break;
 
                 case 2:
@@ -69,8 +69,6 @@ public class MenuController : MonoBehaviour
         if(page == 5)
         {
             nextbut.SetActive(false);
-            checklist.SetActive(true);
-            objectives.SetActive(true);
             closebut.SetActive(true);
         }
         else
@@ -109,5 +107,7 @@ public class MenuController : MonoBehaviour
     {
         this.GetComponentInParent<MeshRenderer>().enabled = false;
         this.GetComponent<Canvas>().enabled = false;
+        checklist.SetActive(true);
+        objectives.SetActive(true);
     }
 }

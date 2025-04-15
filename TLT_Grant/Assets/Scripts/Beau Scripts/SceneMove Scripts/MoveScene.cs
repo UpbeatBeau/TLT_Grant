@@ -9,14 +9,14 @@ public class MoveScene : MonoBehaviour
 {
     public string nxtscene;
     //private ExperienceManager em;
-    public Canvas entergame;
+    //public Canvas entergame;
     public bool intrig;
     public InputActionReference rtrigger;
     private bool triggerpress;
 
     private void Awake()
     {
-        entergame.enabled = false;
+        //entergame.enabled = false;
     }
 
     // Start is called before the first frame update
@@ -44,7 +44,7 @@ public class MoveScene : MonoBehaviour
 
         if (intrig)
         {
-            entergame.enabled = true;
+            //entergame.enabled = true;
             /*if (triggerpress)
             {
                 NextScene(nxtscene);
@@ -73,7 +73,7 @@ public class MoveScene : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             intrig = false;
-            entergame.enabled = false;
+            //entergame.enabled = false;
         }
        
     }
