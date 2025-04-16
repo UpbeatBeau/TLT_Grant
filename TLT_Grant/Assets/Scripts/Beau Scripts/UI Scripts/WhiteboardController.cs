@@ -19,7 +19,7 @@ public class WhiteboardController : MonoBehaviour
     private void Awake()
     {
         em = ExperienceManager.instance.GetComponent<ExperienceManager>();
-        exitstuff.SetActive(false);
+        exitstuff.SetActive(true);
         page = 0;
     }
     private void Update()
@@ -68,7 +68,6 @@ public class WhiteboardController : MonoBehaviour
 
         if (correctslot == 6)
         {
-            exitstuff.SetActive(true);
             em.game1 = true;
             em.gamecomp++;
         }

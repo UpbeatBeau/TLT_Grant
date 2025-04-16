@@ -19,7 +19,7 @@ public class CalendarMenu : MonoBehaviour
     private void Awake()
     {
         em = ExperienceManager.instance.GetComponent<ExperienceManager>();
-        exitstuff.SetActive(false);
+        exitstuff.SetActive(true);
         page = 0;
     }
     private void Update()
@@ -72,7 +72,7 @@ public class CalendarMenu : MonoBehaviour
 
         if(correctslot == 21)
         {
-            exitstuff.SetActive(true);
+            
             celebration.SetActive(true);
             em.game1 = true;
             em.gamecomp++;

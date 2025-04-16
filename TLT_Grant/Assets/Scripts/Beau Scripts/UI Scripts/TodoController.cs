@@ -23,7 +23,7 @@ public class TodoController : MonoBehaviour
     {
         em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         youwin.enabled = false;
-        exitstuff.SetActive(false);
+        exitstuff.SetActive(true);
         page = 0;
     }
     private void Update()
@@ -78,7 +78,6 @@ public class TodoController : MonoBehaviour
 
         if (correctslot == 6)
         {
-            exitstuff.SetActive(true);
             youwin.enabled = true;
             em.game2 = true;
             em.gamecomp++;
