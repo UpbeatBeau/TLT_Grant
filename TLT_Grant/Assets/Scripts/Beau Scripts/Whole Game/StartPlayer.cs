@@ -7,7 +7,7 @@ public class StartPlayer : MonoBehaviour
 {
     //vars
     public Vector3 startpos;
-    public Quaternion startrot;
+    //public Quaternion startrot;
 
 
     private void Awake()

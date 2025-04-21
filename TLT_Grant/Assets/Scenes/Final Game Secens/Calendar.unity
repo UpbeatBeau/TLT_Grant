@@ -1387,7 +1387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.811
+      value: -1.742
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1428,6 +1428,18 @@ PrefabInstance:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729638270002042397, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: startpos.x
+      value: -1.742
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729638270002042397, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: startpos.y
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729638270002042397, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: startpos.z
+      value: -1.498
       objectReference: {fileID: 0}
     - target: {fileID: 7313654230448209575, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_Name
@@ -9262,6 +9274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nxtscene: Beau
+  entergame: {fileID: 0}
   intrig: 0
   rtrigger: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!65 &325508742
@@ -15562,6 +15575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nxtscene: 
+  entergame: {fileID: 0}
   intrig: 0
   rtrigger: {fileID: 0}
 --- !u!1 &1078081965

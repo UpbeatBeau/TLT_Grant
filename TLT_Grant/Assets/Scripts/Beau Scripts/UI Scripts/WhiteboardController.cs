@@ -27,25 +27,25 @@ public class WhiteboardController : MonoBehaviour
         switch (page)
         {
             case 0:
-                words.text = "Welcome to the Whiteboard! In this activity you will read the white board and then press (pointer finger) the button that says next on the board.";
+                words.text = "Welcome to the Whiteboard! \r\n Please review the white board and  press next using the pointer finger.";
                 break;
 
             case 1:
-                words.text = "This white board is all about procrastination and what it means to procrastinate.";
+                words.text = "Click exit when finished.";
                 break;
 
-            case 2:
+            /*case 2:
                 words.text = "Once you have finished reading all the information on the white board the exit will appear to the left of the white board.";
                 break;
 
             case 3:
                 words.text = "Hope you have fun!";
-                break;
+                break;*/
 
            
         }
 
-        if (page == 3)
+        if (page == 1)
         {
             nextbut.SetActive(false);
             closebut.SetActive(true);
@@ -76,7 +76,7 @@ public class WhiteboardController : MonoBehaviour
     }
     public void Pageturn()
     {
-        if (page < 3)
+        if (page < 1)
         {
             page++;
         }

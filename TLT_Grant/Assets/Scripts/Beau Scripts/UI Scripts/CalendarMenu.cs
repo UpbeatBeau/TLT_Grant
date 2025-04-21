@@ -27,18 +27,18 @@ public class CalendarMenu : MonoBehaviour
         switch (page)
         {
             case 0:
-                words.text = "Welcome to the Calendar! In this activity you will grab (middle finger button) the green sticky notes and place them on your schedule to make a schedule.";
+                words.text = "Welcome to the Calendar!\r\nLet’s make a plan here with your schedule. \r\n";
                 break;
 
             case 1:
-                words.text = "To place a sticky note grab it, and then place it at the location you want it to go to and let go of the middle finger button.";
+                words.text = "Grab the green sticky notes by pushing the middle finger button and place them on your schedule by letting go of the button.";
                 break;
 
             case 2:
-                words.text = "You can see that you already have Dinner scheduled! Making a schedule is a great way to organize and manage your time.";
+                words.text = "When you are finished, click “Exit.”";
                 break;
 
-            case 3:
+            /*case 3:
                 words.text = "Once you put all the sticky notes in the correct time slots, the Exit will open up!";
                 break;
 
@@ -48,10 +48,10 @@ public class CalendarMenu : MonoBehaviour
 
             case 5:
                 words.text = "Check here to see your progress." + "\n You have: " + correctslot + " scheduled events correct!";
-                break;
+                break;*/
         }
 
-        if (page == 5)
+        if (page == 2)
         {
             nextbut.SetActive(false);
             
@@ -82,7 +82,7 @@ public class CalendarMenu : MonoBehaviour
     }
     public void Pageturn()
     {
-        if (page < 5)
+        if (page < 2)
         {
             page++;
         }

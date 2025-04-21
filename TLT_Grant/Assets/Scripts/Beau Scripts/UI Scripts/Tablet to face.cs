@@ -1,32 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Tablettoface : MonoBehaviour
 {
     //vars
-    public float distanceFromCamera = .75f;
+    
+    public GameObject offsetactive;
+    public GameObject offsetinactive;
+    public bool active;
+    public float speed;
+    public Material activemat;
+    public Material inactivemat;
+    private MeshRenderer mesh;
 
     private void Awake()
     {
-        // Get the main camera
-        Camera mainCamera = Camera.main;
-
-        // Position the object in front of the camera
-        Vector3 cameraForward = mainCamera.transform.forward;
-        Vector3 newPosition = mainCamera.transform.position + cameraForward * distanceFromCamera;
-        this.transform.position = newPosition;
-
-        // Make the object face the camera
-        this.transform.LookAt(mainCamera.transform.position);
-
-        // Optionally, adjust the rotation so the object is not flipped
-        this.transform.rotation = Quaternion.Euler(
-            this.transform.rotation.eulerAngles.x,
-            this.transform.rotation.eulerAngles.y + 180,
-            this.transform.rotation.eulerAngles.z
-        );
-
+       transform.position = offsetactive.transform.position;
+        active = true;
+        mesh = GetComponent<MeshRenderer>();
     }
     // Start is called before the first frame update
     void Start()
@@ -37,6 +30,16 @@ public class Tablettoface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        var step = speed * Time.deltaTime;
+        if (active)
+        {
+            mesh.material = activemat;
+            transform.position = Vector3.MoveTowards(transform.position, offsetactive.transform.position, step);
+        }
+        else
+        {
+            mesh.material = inactivemat;
+            transform.position = Vector3.MoveTowards(transform.position,offsetinactive.transform.position, step);
+        }
     }
 }

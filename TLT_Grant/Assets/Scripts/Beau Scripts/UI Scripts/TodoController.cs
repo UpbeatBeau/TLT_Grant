@@ -31,11 +31,11 @@ public class TodoController : MonoBehaviour
         switch (page)
         {
             case 0:
-                words.text = "Welcome to the table. You have six weeks to complete your final paper. Use the provided tasks to create a timeline and assign each task to a specific time frame.";
+                words.text = "Welcome to the Project station!\r\n You have six weeks to complete your final paper.  Let’s create a timeline to complete each task in a timely manner.";
                 break;
 
             case 1:
-                words.text = "In order to complete a large task, we can make a to-do list by separating when to do tasks and prioritizing smaller, more manageable tasks.";
+                words.text = "Open the box by pushing the button with your middle finger button. Grab each task in the same way and place them to each week.";
                 break;
 
             case 2:
@@ -43,19 +43,19 @@ public class TodoController : MonoBehaviour
                 break;
 
             case 3:
-                words.text = "Organize each task on the table by placing them in the section marked on the table. Each week will only have one task assigned to it.";
+                words.text = "Once you place the correct item in the section, the week will turn green.";
                 break;
 
             case 4:
-                words.text = "Once you place the correct item in the section the week will turn green!";
+                words.text = "When you finish, click the exit.";
                 break;
 
-            case 5:
+           /* case 5:
                 words.text = "After you create a working to-do list by separating the larger project into smaller ones, the exit will appear to your right.";
-                break;
+                break;*/
         }
 
-        if (page == 5)
+        if (page == 4)
         {
             nextbut.SetActive(false);
             closebut.SetActive(true);
@@ -85,7 +85,7 @@ public class TodoController : MonoBehaviour
     }
     public void Pageturn()
     {
-        if (page < 5)
+        if (page < 4)
         {
             page++;
         }

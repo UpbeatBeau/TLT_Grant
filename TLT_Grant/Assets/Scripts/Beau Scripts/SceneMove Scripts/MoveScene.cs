@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.UI;
 
 public class MoveScene : MonoBehaviour
 {
     public string nxtscene;
     //private ExperienceManager em;
-    //public Canvas entergame;
+    public Button entergame;
     public bool intrig;
     public InputActionReference rtrigger;
     private bool triggerpress;
@@ -25,6 +26,7 @@ public class MoveScene : MonoBehaviour
       //  em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         
         intrig = false;
+        entergame.interactable = false;
     }
 
     // Update is called once per frame
@@ -44,7 +46,7 @@ public class MoveScene : MonoBehaviour
 
         if (intrig)
         {
-            //entergame.enabled = true;
+            entergame.interactable = true;
             /*if (triggerpress)
             {
                 NextScene(nxtscene);
@@ -73,7 +75,7 @@ public class MoveScene : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             intrig = false;
-            //entergame.enabled = false;
+            entergame.interactable = false;
         }
        
     }
