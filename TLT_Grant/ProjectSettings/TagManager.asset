@@ -13,6 +13,7 @@ TagManager:
   - Slot 6
   - Anchor
   - Sticky
+  - Offset
   layers:
   - Default
   - TransparentFX

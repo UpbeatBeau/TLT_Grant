@@ -1684,7 +1684,7 @@ GameObject:
   - component: {fileID: 5818111123188110104}
   m_Layer: 0
   m_Name: offsetinactive
-  m_TagString: Untagged
+  m_TagString: Offset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1698,7 +1698,7 @@ Transform:
   m_GameObject: {fileID: 6224101890789769490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.04739433, z: -0, w: 0.9988763}
-  m_LocalPosition: {x: 0.4, y: -0.647, z: 1.23}
+  m_LocalPosition: {x: 0.411, y: -0.647, z: 1.115}
   m_LocalScale: {x: 0.4190682, y: 0.4190682, z: 0.009081626}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2007,7 +2007,7 @@ GameObject:
   - component: {fileID: 6785235685331345321}
   m_Layer: 0
   m_Name: offset active
-  m_TagString: Untagged
+  m_TagString: Offset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

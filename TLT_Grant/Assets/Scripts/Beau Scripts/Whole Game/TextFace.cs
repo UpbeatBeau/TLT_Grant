@@ -6,6 +6,12 @@ public class TextFace : MonoBehaviour
 {
 
     private Camera mainCamera;
+   
+
+    private void Awake()
+    {
+       
+    }
 
     void Start()
     {

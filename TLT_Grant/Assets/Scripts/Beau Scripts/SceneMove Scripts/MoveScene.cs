@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using TMPro;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class MoveScene : MonoBehaviour
 {
@@ -14,16 +15,18 @@ public class MoveScene : MonoBehaviour
     public bool intrig;
     public InputActionReference rtrigger;
     private bool triggerpress;
+    private Tablettoface tbf;
 
     private void Awake()
     {
         //entergame.enabled = false;
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
-      //  em = ExperienceManager.instance.GetComponent<ExperienceManager>();
+        //  em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         
         intrig = false;
         entergame.interactable = false;
@@ -87,5 +90,10 @@ public class MoveScene : MonoBehaviour
         SceneManager.LoadScene(nxt);
     }
 
-   
+    public void Center(string s)
+    {
+       Tablettoface.instance.GetComponent<Tablettoface>().Center(s);
+        
+    }
+
 }

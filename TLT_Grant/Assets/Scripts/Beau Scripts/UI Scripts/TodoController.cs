@@ -25,6 +25,7 @@ public class TodoController : MonoBehaviour
         youwin.enabled = false;
         exitstuff.SetActive(true);
         page = 0;
+        CloseHelp();
     }
     private void Update()
     {
