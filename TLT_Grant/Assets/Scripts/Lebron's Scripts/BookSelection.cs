@@ -18,6 +18,8 @@ public class BookSelection : MonoBehaviour
     private RaycastHit hit;
     public float offsety;
     private BookSpots lasthit;
+    private Collider lastin;
+    private bool placed;
 
     public bool grippress;
 
@@ -59,6 +61,12 @@ public class BookSelection : MonoBehaviour
 
                 this.gameObject.transform.rotation = ogrot;
 
+                lastin = task;
+
+                task.enabled = false;
+
+                placed = true;
+
         }
         else if (grippress == false && intrig == false)
         {
@@ -92,5 +100,11 @@ public class BookSelection : MonoBehaviour
             
         }
         //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100, Color.yellow);
+    }
+    public void PickUp()
+    {
+        placed = false;
+        lastin.enabled = true;
+        lastin = null;
     }
 }

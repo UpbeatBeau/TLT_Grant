@@ -22,6 +22,8 @@ public class Todoobject : MonoBehaviour
     public string goal;
     public bool beencorrect;
     public TodoController tdc;
+    private Collider lastin;
+    private bool placed;
 
 
 
@@ -59,15 +61,18 @@ public class Todoobject : MonoBehaviour
             Vector3 slotSpace = task.transform.position;
 
             this.gameObject.transform.position = slotSpace;
+            lastin = task;
+            task.enabled = false;
+            placed = true;
 
-            if (task.gameObject.name.Contains(goal) == true && !beencorrect)
+            if (task.gameObject.name.Contains(goal) == true && !beencorrect )
             {
                 Debug.Log("DID IT");
                 tdc.correctslot++;
                 task.gameObject.GetComponent<Outline>().OutlineColor = Color.green;
                 beencorrect = true;
             }
-            else if(task.gameObject.name.Contains(goal) == false && !beencorrect)
+            else if(task.gameObject.name.Contains(goal) == false && !beencorrect )
             {
                 task.gameObject.GetComponent<Outline>().OutlineColor = Color.red;
             }
@@ -132,10 +137,15 @@ public class Todoobject : MonoBehaviour
 
     public void todoSelected()
     {
+        placed = false;
+        lastin.gameObject.GetComponent<Outline>().OutlineColor = Color.white;
+        lastin.enabled = true;
+        lastin = null;
         if (beencorrect)
         {
             tdc.correctslot--;
             beencorrect = false;
         }
+
     }
 }

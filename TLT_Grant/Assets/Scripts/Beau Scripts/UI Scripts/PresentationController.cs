@@ -22,7 +22,7 @@ public class PresentationController : MonoBehaviour
     void Awake()
     {
         em = ExperienceManager.instance.GetComponent<ExperienceManager>();
-        exitstuff.SetActive(false);
+        //exitstuff.SetActive(false);
         slidenum = 1;
     }
 
@@ -70,7 +70,7 @@ public class PresentationController : MonoBehaviour
     public void DONEBUT()
     {
         this.gameObject.SetActive(false);
-        exitstuff.SetActive(true);
+        //exitstuff.SetActive(true);
         em.game3 = true;
         em.gamecomp++;
         //rawImage.enabled = false;

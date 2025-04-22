@@ -40,9 +40,7 @@ public class Tablettoface : MonoBehaviour
     {
         offsetactive = Player.instance.GetComponent<Player>().offsetactive;
         offsetinactive = Player.instance.GetComponent<Player>().offsetinactive;
-        transform.position = offsetactive.transform.position;
-        active = true;
-        
+        Center("main");
     }
 
     // Update is called once per frame

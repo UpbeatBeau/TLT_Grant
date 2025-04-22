@@ -21,7 +21,7 @@ public class CubeOutline : MonoBehaviour
     
     public void OutOFF()
     {
-        outline.OutlineColor = Color.white;
-        Debug.Log("color");
+        //outline.OutlineColor = Color.white;
+        //Debug.Log("color");
     }
 }

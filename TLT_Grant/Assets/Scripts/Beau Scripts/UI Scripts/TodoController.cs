@@ -25,7 +25,9 @@ public class TodoController : MonoBehaviour
         youwin.enabled = false;
         exitstuff.SetActive(true);
         page = 0;
+        PopOut();
         CloseHelp();
+        
     }
     private void Update()
     {
@@ -112,7 +114,7 @@ public class TodoController : MonoBehaviour
         {
             if(o.OutlineColor == Color.red)
             {
-                o.OutlineColor = Color.white;
+                //o.OutlineColor = Color.white;
             }
         }
     }

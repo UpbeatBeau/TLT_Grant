@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class Checkboxes : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Checkboxes : MonoBehaviour
     public GameObject g4;
     public Material Finish;
     public TextMeshPro words;
+    public bool on;
+    public MenuController mc;
     
 
     private void Awake()
@@ -44,5 +47,11 @@ public class Checkboxes : MonoBehaviour
             g3.gameObject.SetActive(false);
             g4.gameObject.SetActive(false);
         }
+
+        if (mc.page == mc.maxpage ) { 
+            this.gameObject.SetActive(true);
+        }
     }
+
+   
 }

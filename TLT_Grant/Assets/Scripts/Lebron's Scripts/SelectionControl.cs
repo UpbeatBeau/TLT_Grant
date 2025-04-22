@@ -27,6 +27,8 @@ public class SelectionControl : MonoBehaviour
     public string goalslot;
     private bool beencorrect;
     Outline outline;
+    private Collider lastin;
+    private bool placed;
     
     public bool grippress;
 
@@ -43,6 +45,7 @@ public class SelectionControl : MonoBehaviour
         ogpos = this.gameObject.transform.position;
         ogrot = this.gameObject.transform.rotation;
         beencorrect = false;
+        placed = false;
 
     }
     // Start is called before the first frame update
@@ -77,17 +80,20 @@ public class SelectionControl : MonoBehaviour
                 beencorrect= true;
                 outline.enabled = true;
                 outline.OutlineColor = Color.green;
+                
+                
             }else if (task.gameObject.name.Contains(goalslot) == false && beencorrect)
             {
                 calendarMenu.correctslot--;
                 beencorrect = false;
                 outline.enabled = true;
-                outline.OutlineColor = Color.red;  
+                outline.OutlineColor = Color.red;
+
             }else if (task.gameObject.name.Contains(goalslot) == false && !beencorrect)
             {
                 outline.enabled = true;
                 outline.OutlineColor = Color.red;
-            }else if (task.gameObject.name.Contains(goalslot) == false && beencorrect)
+            }else if (task.gameObject.name.Contains(goalslot) == true && beencorrect)
             {
                 outline.enabled = true;
                 outline.OutlineColor = Color.green;
@@ -103,9 +109,12 @@ public class SelectionControl : MonoBehaviour
                 this.gameObject.transform.position = slotSpace;
 
                 this.gameObject.transform.rotation =  placerot;
+                lastin = task;
+                task.enabled = false;
+                placed = true;
             }
            
-        }else if(grippress == false && intrig == false)
+        }else if(grippress == false && intrig == false && placed == false)
         {
            this.gameObject.transform.position = ogpos;
            this.gameObject.transform.rotation = ogrot;
@@ -265,5 +274,12 @@ public class SelectionControl : MonoBehaviour
     public void Clearline()
     {
         outline.enabled = false;
+    }
+
+    public void PickUp()
+    {
+        placed = false;
+        lastin.enabled = true;
+        lastin = null;
     }
 }

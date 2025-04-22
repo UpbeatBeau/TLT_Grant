@@ -12,14 +12,14 @@ public class WhiteboardController : MonoBehaviour
     public GameObject closebut;
     private int page;
     public int correctslot;
-    public GameObject exitstuff;
+    //public GameObject exitstuff;
     private ExperienceManager em;
 
 
     private void Awake()
     {
         em = ExperienceManager.instance.GetComponent<ExperienceManager>();
-        exitstuff.SetActive(true);
+        //exitstuff.SetActive(true);
         page = 0;
     }
     private void Update()
