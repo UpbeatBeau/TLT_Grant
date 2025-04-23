@@ -12,7 +12,7 @@ public class BookSpots : MonoBehaviour
         outline = this.gameObject.AddComponent<Outline>();
         outline.OutlineMode = Outline.Mode.OutlineAll;
         outline.OutlineColor = Color.yellow;
-        outline.OutlineWidth = 10f;
+        outline.OutlineWidth = 20f;
         outline.enabled = false;
     }
     private void Update()

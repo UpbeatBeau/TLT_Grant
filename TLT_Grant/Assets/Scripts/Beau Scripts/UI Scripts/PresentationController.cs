@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PresentationController : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class PresentationController : MonoBehaviour
     public Texture slide3;
     private int slidenum;
     public GameObject exitstuff;
+    public TextMeshPro finals;
     private ExperienceManager em;
 
 
@@ -24,6 +26,7 @@ public class PresentationController : MonoBehaviour
         em = ExperienceManager.instance.GetComponent<ExperienceManager>();
         //exitstuff.SetActive(false);
         slidenum = 1;
+        finals.enabled = false;
     }
 
     // Update is called once per frame
@@ -74,6 +77,7 @@ public class PresentationController : MonoBehaviour
         em.game3 = true;
         em.gamecomp++;
         //rawImage.enabled = false;
+        finals.enabled=true;
        
     }
 

@@ -24,7 +24,7 @@ public class CalendarMenu : MonoBehaviour
     }
     private void Update()
     {
-        switch (page)
+        /*switch (page)
         {
             case 0:
                 words.text = "Welcome to the Calendar!\r\nLet’s make a plan here with your schedule. \r\n";
@@ -38,7 +38,7 @@ public class CalendarMenu : MonoBehaviour
                 words.text = "When you are finished, click “Exit.”";
                 break;
 
-            /*case 3:
+            case 3:
                 words.text = "Once you put all the sticky notes in the correct time slots, the Exit will open up!";
                 break;
 
@@ -48,7 +48,7 @@ public class CalendarMenu : MonoBehaviour
 
             case 5:
                 words.text = "Check here to see your progress." + "\n You have: " + correctslot + " scheduled events correct!";
-                break;*/
+                break;
         }
 
         if (page == 2)
@@ -69,7 +69,7 @@ public class CalendarMenu : MonoBehaviour
         {
             prevbut.SetActive(true);
         }
-
+        */
         if(correctslot == 21)
         {
             

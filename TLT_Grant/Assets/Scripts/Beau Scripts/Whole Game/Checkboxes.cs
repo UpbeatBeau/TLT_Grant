@@ -41,14 +41,14 @@ public class Checkboxes : MonoBehaviour
         }
         if (em.game1 == true && em.game2 == true && em.game3 == true && em.game4 == true)
         {
-            words.text = "YOU DID IT!!!!\n\n\n You finished the experience by learning how to make a schedule, how to separate smaller projects into a todo list, and how to beat procrastination. \n\n Feel free to take off your VR helmet!";
+            words.text = "\n\nYOU DID IT!!!!\n\n\n You finished the experience by learning how to make a schedule, how to separate smaller projects into a todo list, and how to beat procrastination. \n\n Feel free to take off your VR helmet!";
             g1.gameObject.SetActive(false);
             g2.gameObject.SetActive(false);
             g3.gameObject.SetActive(false);
             g4.gameObject.SetActive(false);
         }
 
-        if (mc.page == mc.maxpage ) { 
+        if (mc.page == 1 || em.gamecomp > 0 ) { 
             this.gameObject.SetActive(true);
         }
     }

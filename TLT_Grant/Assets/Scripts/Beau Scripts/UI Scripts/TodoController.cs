@@ -26,12 +26,12 @@ public class TodoController : MonoBehaviour
         exitstuff.SetActive(true);
         page = 0;
         PopOut();
-        CloseHelp();
+        //CloseHelp();
         
     }
     private void Update()
     {
-        switch (page)
+        /*switch (page)
         {
             case 0:
                 words.text = "Welcome to the Project station!\r\n You have six weeks to complete your final paper.  Let’s create a timeline to complete each task in a timely manner.";
@@ -53,9 +53,9 @@ public class TodoController : MonoBehaviour
                 words.text = "When you finish, click the exit.";
                 break;
 
-           /* case 5:
+           case 5:
                 words.text = "After you create a working to-do list by separating the larger project into smaller ones, the exit will appear to your right.";
-                break;*/
+                break;
         }
 
         if (page == 4)
@@ -77,7 +77,7 @@ public class TodoController : MonoBehaviour
         else
         {
             prevbut.SetActive(true);
-        }
+        }*/
 
         if (correctslot == 6)
         {
@@ -86,7 +86,7 @@ public class TodoController : MonoBehaviour
             em.gamecomp++;
         }
     }
-    public void Pageturn()
+    /*public void Pageturn()
     {
         if (page < 4)
         {
@@ -106,7 +106,7 @@ public class TodoController : MonoBehaviour
     {
         this.GetComponentInParent<MeshRenderer>().enabled = false;
         this.GetComponent<Canvas>().enabled = false;
-    }
+    }*/
 
     public void Cleanup()
     {

@@ -739,7 +739,7 @@ Transform:
   m_GameObject: {fileID: 74706923}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.894, y: 4.836, z: -0.352}
+  m_LocalPosition: {x: -0.894, y: 4.87, z: -0.352}
   m_LocalScale: {x: 33.535934, y: 41.919918, z: 33.535934}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3079,7 +3079,7 @@ Transform:
   m_GameObject: {fileID: 377424061}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.004, y: 4.81, z: -0.33}
+  m_LocalPosition: {x: -1, y: 4.81, z: -0.34}
   m_LocalScale: {x: 31.7584, y: 39.697998, z: 31.7584}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4284,8 +4284,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tempted to do something exciting first before completing assignments
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
+  m_sharedMaterial: {fileID: 3403510268474820673, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4374,7 +4374,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 3403510268474820673, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5288,8 +5288,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nervous about the exam
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
+  m_sharedMaterial: {fileID: 3403510268474820673, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5378,7 +5378,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 3403510268474820673, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8315,7 +8315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.683, y: 1.316}
+  m_AnchoredPosition: {x: 4.683, y: 1.094}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990527786
@@ -8340,8 +8340,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Exit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
+  m_sharedMaterial: {fileID: 3403510268474820673, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8430,7 +8430,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 3403510268474820673, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10522,8 +10522,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Exit Task
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d75d3182a6761374fab6e84bc333fa32, type: 2}
+  m_sharedMaterial: {fileID: -554420746551394957, guid: d75d3182a6761374fab6e84bc333fa32, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12210,8 +12210,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Solutions
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
+  m_sharedMaterial: {fileID: 3403510268474820673, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12300,7 +12300,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 3403510268474820673, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15678,7 +15678,7 @@ Transform:
   m_GameObject: {fileID: 1996861934}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.894, y: 5.966, z: -0.352}
+  m_LocalPosition: {x: -0.894, y: 5.95, z: -0.352}
   m_LocalScale: {x: 33.535934, y: 41.919918, z: 33.535934}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16573,8 +16573,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Feeling tired and exhausted
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
+  m_sharedMaterial: {fileID: 3403510268474820673, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16663,7 +16663,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 3403510268474820673, guid: be51d9bcacd25a64abf52e114f2590ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17846,6 +17846,8 @@ MonoBehaviour:
   activemat: {fileID: 2100000, guid: c7660a596c9e9c64a9187ff82641a55e, type: 2}
   inactivemat: {fileID: 2100000, guid: eb06d10ea99455d4db79896f3bc94e7b, type: 2}
   menu: {fileID: 0}
+  activescale: {x: 0, y: 0, z: 0}
+  inactivescale: {x: 0, y: 0, z: 0}
 --- !u!1 &1577625677551721136
 GameObject:
   m_ObjectHideFlags: 0

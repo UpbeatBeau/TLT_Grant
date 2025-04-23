@@ -17,6 +17,8 @@ public class Tablettoface : MonoBehaviour
     public Material inactivemat;
     private MeshRenderer mesh;
     public MenuController menu;
+    public Vector3 activescale;
+    public Vector3 inactivescale;
 
     private void Awake()
     {
@@ -51,11 +53,15 @@ public class Tablettoface : MonoBehaviour
         {
             mesh.material = activemat;
             transform.position = Vector3.MoveTowards(transform.position, offsetactive.transform.position, step);
+            transform.localScale = activescale;
+            
         }
         else
         {
             mesh.material = inactivemat;
             transform.position = Vector3.MoveTowards(transform.position,offsetinactive.transform.position, step);
+            transform.localScale = inactivescale;
+            
         }
     }
 
@@ -65,5 +71,6 @@ public class Tablettoface : MonoBehaviour
         active = true;
         menu.page = 0;
         menu.room = s;
+        menu.active = true;
     }
 }
