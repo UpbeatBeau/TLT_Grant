@@ -67,7 +67,7 @@ public class MenuController : MonoBehaviour
                                 break;
 
                             case 1:
-                                words.text = "Let’s start from the calendar. \r\n Please point at the white circle on the floor and push the joystick in your right hand forward.\r\n";
+                                words.text = "Let’s start from the calendar on the back wall. \r\n Please point at the white circle on the floor and push the joystick in your right hand forward.\r\n";
                                 break;
 
 
@@ -173,7 +173,7 @@ public class MenuController : MonoBehaviour
                                 break;
 
                             case 1:
-                                words.text = "Grab the yellow sticky notes by pushing the middle finger button on the grip and place them on your schedule by letting go of the button.";
+                                words.text = "Grab the yellow sticky notes by pushing the middle finger button on the grip and place them on your schedule by letting go of the button. You may want to walk closer to the board.";
                                 break;
 
                             case 2:

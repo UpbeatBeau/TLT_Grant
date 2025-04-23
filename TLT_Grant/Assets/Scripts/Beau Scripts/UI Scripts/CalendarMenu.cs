@@ -72,10 +72,8 @@ public class CalendarMenu : MonoBehaviour
         */
         if(correctslot == 21)
         {
-            
-            celebration.SetActive(true);
-            em.game1 = true;
-            em.gamecomp++;
+
+            FINISH();
         }
 
        
@@ -94,5 +92,12 @@ public class CalendarMenu : MonoBehaviour
             page--;
         }
 
+    }
+
+    public void FINISH()
+    {
+        celebration.SetActive(true);
+        em.game1 = true;
+        em.gamecomp++;
     }
 }
