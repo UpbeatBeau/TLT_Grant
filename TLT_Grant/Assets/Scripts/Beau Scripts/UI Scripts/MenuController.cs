@@ -63,7 +63,7 @@ public class MenuController : MonoBehaviour
                         switch (page)
                         {
                             case 0:
-                                words.text = "Welcome to the Time Management Station!\r\n You are going to explore multiple ways to enhance your time management skills today.";
+                                words.text = "Welcome to the Time Management Station!\r\n You are going to explore multiple ways to enhance your time management skills today. \r \n To click on buttons in the experience use the trigger button that your pointer finger is on.";
                                 break;
 
                             case 1:
@@ -196,7 +196,7 @@ public class MenuController : MonoBehaviour
                                 break;
 
                             case 2:
-                                words.text = "When you are finished, click “Exit.”";
+                                words.text = "Place sticky notes on the board in the correct time. When you are finished, click “Exit.”";
                                 break;
 
 
@@ -229,7 +229,7 @@ public class MenuController : MonoBehaviour
                                 break;
 
                             case 1:
-                                words.text = "Click exit when finished.";
+                                words.text = "Click next button to go through the slides. Click exit when finished.";
                                 break;
 
 
@@ -277,7 +277,7 @@ public class MenuController : MonoBehaviour
                                 break;
 
                             case 3:
-                                words.text = "When you are finished, click the exit.";
+                                words.text = "Put books on the shelves. When you are finished, click the exit.";
                                 break;
 
                         }
@@ -340,6 +340,7 @@ public class MenuController : MonoBehaviour
             {
                 nextbut.SetActive(false);
                 closebut.SetActive(true);
+                openbut.SetActive(false);
             }
             else
             {
@@ -398,7 +399,9 @@ public class MenuController : MonoBehaviour
     public void Activate()
     {
         this.GetComponentInParent<Tablettoface>().active = true;
-        closebut.SetActive(true);
+        page = 0;
+        nextbut.SetActive(true);
+        closebut.SetActive(false);
         openbut.SetActive(false);
         active = true;
     }

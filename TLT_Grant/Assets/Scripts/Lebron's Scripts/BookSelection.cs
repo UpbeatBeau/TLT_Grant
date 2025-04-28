@@ -59,7 +59,7 @@ public class BookSelection : MonoBehaviour
 
                 this.gameObject.transform.position = slotSpace + new Vector3(0f,offsety,0f);
 
-                this.gameObject.transform.rotation = ogrot;
+                this.gameObject.transform.rotation = task.transform.localRotation;
 
                 lastin = task;
 

@@ -5298,7 +5298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 12bff5fc3c11cfa48aad0911246db8f9, type: 3}
+  m_Texture: {fileID: 2800000, guid: ea1fbaadcf854aa44a1eeb4f10c785d1, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -6200,9 +6200,9 @@ MonoBehaviour:
   prevbut: {fileID: 1625608727}
   donebut: {fileID: 1646758436}
   rawImage: {fileID: 302390722}
-  slide1: {fileID: 2800000, guid: 12bff5fc3c11cfa48aad0911246db8f9, type: 3}
-  slide2: {fileID: 2800000, guid: 1e13a5867829af14e9160fa127a5384f, type: 3}
-  slide3: {fileID: 2800000, guid: 5920c4615d8417247a71b0515cba5044, type: 3}
+  slide1: {fileID: 2800000, guid: ea1fbaadcf854aa44a1eeb4f10c785d1, type: 3}
+  slide2: {fileID: 2800000, guid: 43a6298949ee53749b3b67b3dc755a48, type: 3}
+  slide3: {fileID: 2800000, guid: 1e7171a65c298a74eb65b4f86718276c, type: 3}
   exitstuff: {fileID: 2138896103}
   finals: {fileID: 1112444563}
 --- !u!114 &1006175447
